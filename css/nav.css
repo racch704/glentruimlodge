@@ -1,0 +1,250 @@
+body {
+    background-color: #fffff3 !important;
+}
+
+/** NAVIGATION **/
+.navbar {
+    opacity: 1;
+    background-color: #f4f2e900; 
+    z-index:10;
+    margin-bottom: 0 !important; /* The !important rule is to ensure it overrides any other styles */
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+
+ }
+ 
+ nav ul li {
+    display: inline-block;
+ }
+
+ .navbar-nav {
+    align-items: center;
+ }
+
+ .custom-mr-auto {
+    margin-left: auto;
+}
+
+.dt-logo {
+    text-align: center;
+    padding: 0 2em;
+  }
+
+.navbar .navbar-brand {
+    margin-right: auto;
+}
+
+
+/** CAROUSEL IMG **/
+
+.carousel-img {
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index:5;
+    position: top;
+
+}
+
+.carousel {
+
+}
+
+.bg-img-1 {
+    background-image: url(../img/index/index_home.jpg);
+
+}
+
+.bg-img-2 {
+    background-image: url(../img/index/front_lp_wideshot.jpg);
+}
+
+.bg-img-3 {
+    background-image: url(../img/index/pods_context.png);
+}
+
+/** CAROUSEL TEXT **/
+
+.carousel-caption {
+    background-color: #000b063e;
+    margin-bottom: 20em;
+}
+
+.carousel-caption h1 {
+    font-size: 5em;
+}
+
+.carousel-caption h5 {
+    font-size: 1em;
+}
+
+.btn {
+    background-color: #f2f4ea2e!important; /* semi-transparent white */
+    border: 1px solid #FFFFFF !important; /* solid white border */
+    color: #f1efe9 !important; /* black text */
+    text-transform: uppercase;
+    padding: 10px 20px !important; /* example padding */
+    font-weight: bold !important; /* makes the text bold */
+}
+
+
+/** ECO PODS **/
+
+.line {
+    border: 2px solid #355033;
+    border-radius: 0;
+}
+
+.eco-pods {
+    margin: 40% 0;
+}
+
+div.col-md-6:nth-child(2) {
+    margin-top: 6em;
+    }
+
+div.container:nth-child(3) {
+    margin-top: 10% !important;
+    margin-bottom: 10% !important;
+}
+
+.pods-text {
+    padding-left: 5em !important;
+}
+/** ECO PODS BOOK BUTTONS **/
+.button {
+    padding-top: 2em !important;
+}
+.btn-custom {
+    background-color: #829c64 !important; /* Example button color */
+    color: white;
+    border: none ;
+    padding: 10px 20px;
+    border-radius: 0 !important; /* Remove border radius for a sharp edge look */
+  }
+  
+  .btn-custom:hover {
+    background-color: #6e8256 !important; /* Darken button on hover */
+  }
+
+
+  /** LOCATION **/
+
+  .background-image {
+    background-image: url('../img/index/location.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh; /* Adjust height as necessary */
+}
+
+.content-area {
+    background-color: #405c71; /* Semi-transparent black background */
+    color: white; /* White text color */
+    padding: 3rem; /* Padding around the text */
+}
+
+.location-h2 {
+    font-size: 4em;
+    text-align: center;
+    color: #f2f4ea;
+}
+
+.location-text {
+    padding-left: 5em !important;
+    padding-right: 5em !important;
+}
+
+
+/** B&B **/
+.bedbreakfast {
+    margin-top: 7em !important; 
+    margin-bottom: 7em !important; 
+}
+
+.image-caption {
+    background: none;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #000; /* Adjust color based on your image's needs */
+  }
+
+  .image-overlay {
+    position: relative;
+    text-align: center;
+  }
+
+  .image-overlay img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .image-overlay .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Adjust the text color as needed */
+  }
+
+  /* Optionally ensure the images take up equal height */
+  .equal-height-img {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .equal-height-img .col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .equal-height-img .col img {
+    flex-grow: 1;
+  }
+
+.text-bb {
+    text-align: center;
+    padding: .7em 0;
+    font-weight: bold;
+}
+
+.bb-text {
+    padding-right: 2em;
+}
+
+.bb-book {
+    padding-top: 2em !important;
+}
+
+/** FOOTER **/
+
+.footer-map {
+    background-image: url('path-to-your-map-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 350px; /* Adjust as needed */
+  }
+
+  .footer-contact {
+    background-color: #f8f9fa; /* Light grey background, adjust color as needed */
+    color: #212529; /* Adjust text color as needed */
+  }
+
+  .footer-contact h2 {
+    color: #212529; /* Adjust heading color as needed */
+  }
+
+  .social-icons {
+    font-size: 24px; /* Adjust icon size as needed */
+  }
+
+/** MOBILE STYLING **/
+

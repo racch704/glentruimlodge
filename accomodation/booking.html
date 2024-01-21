@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Glentruim Lodge</title>
+    <link rel="stylesheet" href="../css/b&b.css" />
+    <link rel="stylesheet" href="../css/booking.css" />
+    <link rel="icon" href="images/favicon.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+
+  <body>
+    
+
+      <!-- NAVIGATION -->
+      <nav class="navbar sticky-top navbar-expand-lg" >
+        <div class="container-fluid justify-content-center">
+            <a class="navbar-brand order-0 d-lg-none" href="#">Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-start">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../b&b.html">B&B</a>
+              </li>
+                <a class="navbar-brand order-0 d-none d-lg-block dt-logo" href="#">Logo</a>
+              <li class="nav-item">
+                <a class="nav-link" href="lower-pod">Pods</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Location</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+          </div>
+        </div>
+      </nav>
+
+
+      <div class="d-flex justify-content-center">
+        <!-- Image placeholder for property -->
+        <img id="property-image" src="https://via.placeholder.com/600x400" alt="Default Property Image" />
+      </div>
+
+
+
+
+      
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          // Define the mapping of property values to image URLs
+          var propertyImages = {
+            '2c6e7b19089547e3956bd9edfce5b313': 'https://via.placeholder.com/600x400/ff0000/FFFFFF?text=King+Size+Bedroom',
+            'f203487e561e4fc3b3fdf6898e08fb2c': 'https://via.placeholder.com/600x400/00ff00/FFFFFF?text=Double+Bedroom+Shared+Bathroom',
+            '7ce7a593fb1344d3a353f6b26e97a4c8': 'https://via.placeholder.com/600x400/0000ff/FFFFFF?text=Double+Bedroom+Shared+Bathroom',
+            '2b23d811fb3e449aaf6ebe2958a9d76f': 'https://via.placeholder.com/600x400/f0f000/FFFFFF?text=Mountain+View+Ecopod',
+            '480dc5f1444b4ea58185dfa0963eda57': 'https://via.placeholder.com/600x400/0ff0f0/FFFFFF?text=Self-catering+Ecopod',
+            '0e297b9a21cf455a9065f00498daabec': 'https://via.placeholder.com/600x400/ff00ff/FFFFFF?text=Glentruim+Lodge'
+          };
+        
+          // Event delegation to handle select element loaded dynamically
+          document.body.addEventListener('change', function(event) {
+            // Check if the target of the event is a select element with the expected name
+            if (event.target && event.target.id === 'PropertyKeyx') {
+              var selectedValue = event.target.value;
+              console.log('Selected Value:', selectedValue); // Debugging: Log selected value
+              var newImagePath = propertyImages[selectedValue] || 'https://via.placeholder.com/600x400'; // Fallback image
+              var propertyImage = document.getElementById('property-image');
+              if (propertyImage) {
+                console.log('Changing Image...'); // Debugging: Log image change
+                propertyImage.src = newImagePath;
+                propertyImage.alt = 'Image of ' + event.target.options[event.target.selectedIndex].text;
+              } else {
+                console.error('Property image element not found');
+              }
+            }
+          });
+        });
+      </script>
+      
+
+        <div class="d-flex justify-content-center">
+          <div class="col-lg-6 booking-form">
+            <!-- OwnerRez Booking/Inquiry widget -->
+            <div class="ownerrez-widget" data-widget-type="Booking/Inquiry" data-widgetId="7d3592c074974e6cb910116b92430981"></div>
+            <script src="https://secure.ownerrez.com/widget.js"></script>
+          </div>
+        </div>
+        
+     
+
+
+
+        
+
+
+
+    
+
+  </body>
+</html>

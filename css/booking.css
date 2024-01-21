@@ -1,0 +1,13 @@
+.booking-form {
+    /* Adjust the width as needed, depending on the size of the widget */
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .ownerrez-widget {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+  }
+  
+

@@ -1,0 +1,57 @@
+body {
+    background-color: #fffff3 !important;
+}
+
+/** NAVIGATION **/
+
+.navbar {
+    opacity: 1;
+    background-color: #f4f2e900; 
+    z-index:10;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+
+ }
+ 
+ nav ul li {
+    display: inline-block;
+ }
+
+ .navbar-nav {
+    align-items: center;
+ }
+
+ .custom-mr-auto {
+    margin-left: auto;
+}
+
+.dt-logo {
+    text-align: center;
+    padding: 0 2em;
+  }
+
+.navbar .navbar-brand {
+    margin-right: auto;
+}
+
+/** IMG **/
+.view {
+    width: 100vw;
+    height: 50%;
+}
+ 
+
+.main {
+    background-color: rgb(101, 142, 178);
+    margin-bottom: 10em;
+
+}
+
+.main a {
+    color: #fffff3;
+}
+
+/**  **/
