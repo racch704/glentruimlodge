@@ -45,7 +45,7 @@ nav ul {
  
 
 .main {
-    background-color: rgb(101, 142, 178);
+    background-color: rgb(119, 129, 158);
     margin-bottom: 10em;
 
 }
@@ -55,3 +55,8 @@ nav ul {
 }
 
 /**  **/
+
+
+.row {
+    text-align: center;
+}

@@ -7,8 +7,9 @@
 
     <title>Glentruim Lodge</title>
     <link rel="stylesheet" href="../css/b&b.css" />
+    <link rel="stylesheet" href="../css/gallery.css" />
     <link rel="icon" href="images/favicon.png" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   </head>
 
   <body>
@@ -34,13 +35,13 @@
               </li>
                 <a class="navbar-brand order-0 d-none d-lg-block dt-logo" href="#">Logo</a>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pods</a>
+                <a class="nav-link" href="upper-pod.html">Pods</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Location</a>
+                <a class="nav-link" href="../location.html">Location</a> 
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
+                <a class="nav-link" href="../contact.html">Contact Us</a>
               </li>
           </div>
         </div>
@@ -62,12 +63,84 @@
       </nav>
 
       <div class="room">
-        <img src="../img/pods/lower_pod/lp_inside.JPG" class="img-fluid" alt="...">
+        <div class="room">
+          <div class="gallery">
+            <div class="main-image">
+                <span class="arrow left-arrow">&lt;</span>
+                <img src="../img/pods/lower_pod/front_lp_close.jpg" alt="">
+                <span class="arrow right-arrow">&gt;</span>
+            </div>
+            <div class="thumbnails">
+                <!-- Thumbnail images -->
+                <img src="../img/pods/lower_pod/front_lp_close.jpg" alt="">
+                <img src="../img/pods/lower_pod/inside no table 2.jpg" alt="">
+                <img src="../img/pods/lower_pod/kitchen.jpg" alt="">
+                <img src="../img/pods/lower_pod/lp_bathroom.JPG" alt="">
+                <img src="../img/pods/lower_pod/lp_table.jpg" alt="">
+                <img src="../img/pods/lower_pod/bbq.jpg" alt="">
+                <img src="../img/pods/lower_pod/lp_context.JPG" alt="">
+                <img src="../img/pods/lower_pod/Max low aerial view.JPG" alt="">
+
+
+  
+                <!-- more thumbnails -->
+              </div>
+            </div>
+        
+            <!-- Lightbox Modal -->
+            <div class="lightbox">
+                <span class="close">&times;</span>
+                <span class="arrow lightbox-left-arrow">&lt;</span>
+                <img src="../img/pods/lower_pod/front_lp_close.jpg" alt="">
+                <span class="arrow lightbox-right-arrow">&gt;</span>
+                <div class="lightbox-thumbnails">
+                    <!-- Thumbnails will be populated here -->
+                </div>
+                <div class="caption"></div>
+            </div>
         <div class="text col-lg-6">
             <h2>Lower Pod</h2>
-            <p class="room-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolor maiores harum laboriosam magni suscipit est velit, exercitationem vero necessitatibus, eos aliquam autem repellat sit, architecto voluptatem voluptatibus ab praesentium vel rem nostrum consequuntur natus recusandae. Dolorum aspernatur facere ducimus quod, inventore ipsam, numquam quia tempore magni, quisquam eius quaerat?</p>
-            <div class="button">
-                <button href="booking.html" class="btn btn-custom">Book Now</button>
+            <p class="room-info">Welcome to our quiet self-catering ensuite ecopod nestled in the heart of the Cairngorms National Park at Glentruim. Situated within the serene embrace of our smallholding, just a mere 30 meters from our cozy cottage and surrounded by the beauty of beech trees, our ecopod offers a peaceful retreat.
+<br><br>
+              During your stay, you'll have the delightful opportunity to encounter red squirrels, graceful deer, majestic birds of prey, and a multitude of other feathered friends in the area. For those fortunate enough, a glimpse of the elusive and rare Scottish Wildcat, along with sightings of ospreys and golden eagles, might be on your horizon. Our charming garden is also home to free-roaming hens and ducks, adding to the idyllic atmosphere of your stay.</p>
+                <!-- Booking Button -->
+<button type="button" class="btn btn-primary btn-custom" data-bs-toggle="modal" data-bs-target="#bookingModal">
+  Book Now
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="bookingModalLabel">Booking or Inquiry</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <!-- OwnerRez Widget -->
+              <!-- OwnerRez Booking/Inquiry widget for Back Room -->
+              <div class="ownerrez-widget" data-widgetId="5ca77b42b6884e43bde5cd1ab9777f7d" data-propertyId="7ce7a593fb1344d3a353f6b26e97a4c8" data-widget-type="Booking/Inquiry"></div>
+          </div>
+      </div>
+
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="bookingModalLabel">Booking or Inquiry</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <!-- OwnerRez Widget -->
+              <!-- OwnerRez Booking/Inquiry widget for Back Room -->
+              <div class="ownerrez-widget" data-widgetId="5ca77b42b6884e43bde5cd1ab9777f7d" data-propertyId="7ce7a593fb1344d3a353f6b26e97a4c8" data-widget-type="Booking/Inquiry"></div>
+          </div>
+      </div>
+  </div>
+</div>
             </div>
             <div class="container amenities">
                 <h4>Amenities</h4>
@@ -123,7 +196,27 @@
    
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="../script.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://secure.ownerrez.com/widget.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-  </body>
+<script type="text/javascript" src="https://secure.ownerrez.com/widget.js"></script>
+
+<script>
+
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var bookingModal = document.getElementById('bookingModal');
+        bookingModal.addEventListener('shown.bs.modal', function () {
+            console.log('Modal is open');
+        });
+
+        // Additional JavaScript functionalities
+    });
+</script>
+
+</body>
 </html>

@@ -3,6 +3,10 @@ body {
 }
 
 /** NAVIGATION **/
+nav {
+  background-color:  #fffff3 !important; /* Adjust the background color as needed */
+}
+
 .navbar {
     opacity: 1;
     background-color: #f4f2e900; 
@@ -33,6 +37,15 @@ nav ul {
     padding: 0 2em;
   }
 
+/**
+.nav-logo img {
+    text-align: center;
+    height: 6em;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+  }**/
+
 .navbar .navbar-brand {
     margin-right: auto;
 }
@@ -51,8 +64,8 @@ nav ul {
 
 }
 
-.carousel {
-
+.carousel a {
+  color: #f1efe9 !important; /* Adjust link color as needed */
 }
 
 .bg-img-1 {
@@ -117,9 +130,7 @@ div.container:nth-child(3) {
     padding-left: 5em !important;
 }
 /** ECO PODS BOOK BUTTONS **/
-.button {
-    padding-top: 2em !important;
-}
+
 .btn-custom {
     background-color: #829c64 !important; /* Example button color */
     color: white;
@@ -140,6 +151,7 @@ div.container:nth-child(3) {
     background-size: cover;
     background-position: center;
     height: 80vh; /* Adjust height as necessary */
+    background-attachment: fixed;
 }
 
 .content-area {

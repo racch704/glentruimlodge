@@ -61,8 +61,7 @@ nav ul {
 }
 
 img {
-    width: 50%; /* You can set the dimensions to whatever you want */
-    height: 50% !important;
+
     object-fit: cover;
     display: grid;
     margin-right: auto;
@@ -78,15 +77,14 @@ img {
 }
 
 
-.button {
-    margin: 1em 0 2em 0;
-}
+
 .btn-custom {
     background-color: #829c64 !important; /* Example button color */
     color: white;
     border: none ;
     padding: 10px 20px;
     border-radius: 0 !important; /* Remove border radius for a sharp edge look */
+    border: none !important; /* Remove border */
   }
   
   .btn-custom:hover {
@@ -118,4 +116,14 @@ img {
 .col-8, .ownerrez-widget {
     margin: 0;
     padding: 0;
+}
+
+
+.modal-header {
+    background-color: #6e8256;
+    color: white;
+}
+
+.modal-content {
+    border-radius: 5px;
 }
