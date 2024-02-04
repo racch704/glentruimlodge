@@ -64,6 +64,10 @@ nav ul {
 
 }
 
+.carousel-item {
+  height: 100vh !important;
+}
+
 .carousel a {
   color: #f1efe9 !important; /* Adjust link color as needed */
 }
@@ -234,6 +238,11 @@ div.container:nth-child(3) {
 
 .bb-book {
     padding-top: 2em !important;
+}
+
+/** Ownerrez **/
+.availability {
+  margin: 2em 0;
 }
 
 /** FOOTER **/

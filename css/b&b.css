@@ -85,6 +85,7 @@ img {
     padding: 10px 20px;
     border-radius: 0 !important; /* Remove border radius for a sharp edge look */
     border: none !important; /* Remove border */
+    margin: 2em 0 6em 0;
   }
   
   .btn-custom:hover {
@@ -98,6 +99,7 @@ img {
 
 .amenities {
     padding: 0 !important;
+    margin: 7em 0;
 }
 
 
