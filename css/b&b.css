@@ -37,6 +37,14 @@ nav ul {
     margin-right: auto;
 }
 
+.amenities ul {
+    list-style-type: none;
+}
+
+.amenities li {
+    display: inline;
+    padding: 0 1em;
+}
 
 .room {
     display: grid;
@@ -47,7 +55,7 @@ nav ul {
 /** second navication **/
 
 .active {
-    background-color: #405c71 !important;
+    background-color: red !important;
     padding: .5em 1em !important;
 }
 .second-nav li {
@@ -91,16 +99,22 @@ img {
   .btn-custom:hover {
     background-color: #6e8256 !important; /* Darken button on hover */
   }
+      
 
-
-.amenities p {
-    margin-bottom: 1em;
-} 
-
-.amenities {
-    padding: 0 !important;
-    margin: 7em 0;
-}
+/** Amenities **/
+#accordionPanelsStayOpenExample {
+    display: grid;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  ul {
+      list-style-type: none;
+  }
+  i {
+      margin-right: 1em;
+  }
+  
 
 
 /** Ownerrez **/

@@ -240,6 +240,12 @@ div.container:nth-child(3) {
     padding-top: 2em !important;
 }
 
+.logo img 
+{
+    height: 6em;
+}
+
+
 /** Ownerrez **/
 .availability {
   margin: 2em 0;

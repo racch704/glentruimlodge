@@ -12,6 +12,20 @@
     <link rel="icon" href="images/favicon.png" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <style>
+      #accordionPanelsStayOpenExample {
+    display: grid;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  ul {
+      list-style-type: none;
+  }
+  i {
+      margin-right: 1em;
+  }
+    </style>
   </head>
 
   <body>
@@ -81,9 +95,7 @@
               <img src="img/b&b/GlentruimLodge-KitchenLow3-TomkinsPhoto-4000pxls.jpg" alt="Kitchen">
               <img src="img/b&b/GlentruimLodge-Sunroom-TomkinsPhoto-1500pxls.jpg" alt="Shared sunroom">
               <img src="img/b&b/shower-room.jpg" alt="Shared shower room">
-              <img src="" alt="">
-              <img src="" alt="">
-              <img src="" alt="">
+
 
               <!-- more thumbnails -->
           </div>
@@ -138,32 +150,170 @@
 <!-- OwnerRez Multiple Month Calendar widget for Upper Pod -->
 <div class="ownerrez-widget" data-propertyId="2b23d811fb3e449aaf6ebe2958a9d76f" data-widget-type="front room - Multiple Month Calendar" data-widgetId="b0abc08a538a434e99d4bc6ffed0a540"></div>
 <script src="https://secure.ownerrez.com/widget.js"></script>
-
-
-            <div class="container amenities">
-                <h4>Amenities</h4>
-                <div class="row">
-                  <div class="col">
-                    <p>Double bed</p>
-                    <p>Four pillows</p>
-                    <p>Chest of drawers</p>
-                    <p>Two bedside Tables</p>
-                    <p>Two lamps</p>
-                  </div>
-                  <div class="col">
-                    <p>USB charging ports</p>
-                    <p>Four Towels</p>
-                    <p>Smart TV</p>
-                    <p>Mirror</p>
-                    <p>Chair</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>  
     </div>
 
 
+    <div class="amenities">
+      <div class="accordion col-lg-8 col-sm-12" id="accordionPanelsStayOpenExample">
+<!-- Overview -->
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOverview" aria-expanded="true" aria-controls="panelsStayOpen-collapseOverview">
+      Overview
+    </button>
+  </h2>
+  <div id="panelsStayOpen-collapseOverview" class="accordion-collapse collapse show">
+    <div class="accordion-body">
+      <ul>
+        <li><i class="fa-solid fa-house"></i><strong>Property Type:</strong> House</li>
+        <li><i class="fa-solid fa-bed"></i><strong>Accommodation:</strong> Private Room</li>
+        <li><i class="fa-solid fa-shower"></i><strong>Bathroom:</strong> Shared with other guests</li>
+        <li><i class="fas fa-users"></i><strong>Common Areas:</strong> Shared with host, other guests</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- House Rules and Policies -->
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseRules" aria-expanded="false" aria-controls="panelsStayOpen-collapseRules">
+      House Rules and Policies
+    </button>
+  </h2>
+  <div id="panelsStayOpen-collapseRules" class="accordion-collapse collapse">
+    <div class="accordion-body">
+      <ul>
+        <li><i class="fa-solid fa-door-open"></i><strong>Check-In:</strong> Host greets you</li>
+        <li><i class="fa-solid fa-users-line"></i><strong>Maximum Occupancy:</strong> 2</li>
+        <li><i class="fa-solid fa-child"></i><strong>Children & Infants:</strong> Welcome</li>
+        <li><i class="fa-solid fa-smoke-ban"></i><strong>Smoking:</strong> Not allowed</li>
+        <li><i class="fa-solid fa-wheelchair"></i><strong>Limited Accessibility</strong></li>
+        <li><i class="fa-solid fa-user-check"></i><strong>Minimum Age of Primary Renter:</strong> 21</li>
+        <li><i class="fa-solid fa-paw"></i><strong>Pets:</strong> Not allowed</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Amenities -->
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseAmenities" aria-expanded="false" aria-controls="panelsStayOpen-collapseAmenities">
+      Amenities
+    </button>
+  </h2>
+  <div id="panelsStayOpen-collapseAmenities" class="accordion-collapse collapse">
+    <div class="accordion-body">
+      <ul>
+        <li><i class="fa-solid fa-wifi"></i><strong>General:</strong> Internet, Central Heating, Linens & Towels Provided, Washing Machine, Clothes Dryer, Hot Water, Hair Dryer, Iron & Board, Wifi, Laptop Friendly Workspace, Basic Soaps, Shampoo, Toilet Paper, Ethernet</li>
+        <li><i class="fa-solid fa-utensils"></i><strong>Kitchen:</strong> Fully Equipped Kitchen, Refrigerator, Stove, Oven, Microwave, Dishwasher, Dishes & Utensils, Spices/Pantry Items, Coffee Maker, Toaster, Kettle, Pots & Pans, Dining Table, Coffee, Wine Glasses</li>
+        <li><i class="fa-solid fa-tv"></i><strong>Entertainment:</strong> Television</li>
+        <li><i class="fa-solid fa-family"></i><strong>Family Friendly:</strong> Pack N Play/Travel Crib, Children's Books & Toys</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Outdoor & Parking -->
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOutdoor" aria-expanded="false" aria-controls="panelsStayOpen-collapseOutdoor">
+      Outdoor & Parking
+    </button>
+  </h2>
+  <div id="panelsStayOpen-collapseOutdoor" class="accordion-collapse collapse">
+    <div class="accordion-body">
+      <ul>
+        <li><i class="fa-solid fa-tree"></i><strong>Outdoor:</strong> Lawn/Garden, Private Yard</li>
+        <li><i class="fa-solid fa-car"></i><strong>Parking:</strong> Free Parking, Free Parking On Premises</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Location & Views -->
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseLocation" aria-expanded="false" aria-controls="panelsStayOpen-collapseLocation">
+      Location & Views
+    </button>
+  </h2>
+  <div id="panelsStayOpen-collapseLocation" class="accordion-collapse collapse">
+    <div class="accordion-body">
+      <ul>
+        <li><i class="fa-solid fa-mountain"></i><strong>Setting & View:</strong> Mountain View, Rural</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Safety Features -->
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSafety" aria-expanded="false" aria-controls="panelsStayOpen-collapseSafety">
+      Safety Features
+    </button>
+  </h2>
+  <div id="panelsStayOpen-collapseSafety" class="accordion-collapse collapse">
+    <div class="accordion-body">
+      <ul>
+        <li><i class="fa-solid fa-shield"></i><strong>Safety:</strong> Carbon Monoxide Detector, Fire Extinguisher, First Aid Kit, Smoke Detector</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Leisure & Adventure -->
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseLeisure" aria-expanded="false" aria-controls="panelsStayOpen-collapseLeisure">
+      Leisure & Adventure
+    </button>
+  </h2>
+  <div id="panelsStayOpen-collapseLeisure" class="accordion-collapse collapse">
+    <div class="accordion-body">
+      <ul>
+        <li><i class="fa-solid fa-binoculars"></i><strong>Leisure:</strong> Bird Watching, Horseback Riding</li>
+        <li><i class="fa-solid fa-bicycle"></i><strong>Sports & Adventure:</strong> Cycling, Fishing, Hiking, Kayaking, Mountain Biking, Mountain Climbing, Mountaineering, Rock Climbing, Sailing, Skiing, Snowboarding</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Expectations -->
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseExpectations" aria-expanded="false" aria-controls="panelsStayOpen-collapseExpectations">
+      Expectations
+    </button>
+  </h2>
+  <div id="panelsStayOpen-collapseExpectations" class="accordion-collapse collapse">
+    <div class="accordion-body">
+      <ul>
+        <li><i class="fa-solid fa-camera"></i><strong>Cameras/Surveillance</strong></li>
+        <li><i class="fa-solid fa-paw"></i><strong>Pets Live at Property</strong></li>
+        <li><i class="fa-solid fa-users"></i><strong>Shared Spaces</strong></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+      
+
+
+    <div class="container mt-5">
+      <!-- Your custom div with Bootstrap classes -->
+      <div class="row justify-content-center">
+          <div class="col-md-8">
+              <!-- OwnerRez Reviews widget -->
+              <div class="ownerrez-widget col-" data-widget-type="rooms - Reviews" data-widgetId="ba7a2e2f220d4da08b2b8adb76a5c113"></div>
+              <script src="https://secure.ownerrez.com/widget.js"></script>
+          </div>
+      </div>
+    </div>
  
 
 
@@ -196,7 +346,7 @@
    
 
 
-   
+<script src="https://kit.fontawesome.com/a8c01cd9e4.js" crossorigin="anonymous"></script>   
 <script src="script.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://secure.ownerrez.com/widget.js"></script>

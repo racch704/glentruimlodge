@@ -10,7 +10,20 @@
     <link rel="stylesheet" href="../css/gallery.css" />
     <link rel="icon" href="images/favicon.png" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <style>
+      #accordionPanelsStayOpenExample {
+    display: grid;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  ul {
+      list-style-type: none;
+  }
+  i {
+      margin-right: 1em;
+  }
+    </style>
   </head>
 
   <body>
@@ -132,34 +145,184 @@
 <!-- OwnerRez Multiple Month Calendar widget for Upper Pod -->
 <div class="ownerrez-widget" data-propertyId="2b23d811fb3e449aaf6ebe2958a9d76f" data-widget-type="Multiple Month Calendar" data-widgetId="4df45dbe69c948f9a08b6b42a3de85ce"></div>
 <script src="https://secure.ownerrez.com/widget.js"></script>
+        </div>
 
-<div class="container amenities">
-                <h4>Amenities</h4>
-                <div class="row">
-                  <div class="col">
-                    <p>Double bed</p>
-                    <p>Four pillows</p>
-                    <p>Chest of drawers</p>
-                    <p>Two bedside Tables</p>
-                    <p>Two lamps</p>
-                  </div>
-                  <div class="col">
-                    <p>USB charging ports</p>
-                    <p>Four Towels</p>
-                    <p>Smart TV</p>
-                    <p>Mirror</p>
-                    <p>Chair</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>  
+        <div class="amenities">
+          <div class="accordion col-lg-8 col-sm-12" id="accordionPanelsStayOpenExample">
+<!-- Property Overview -->
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCabinOverview" aria-expanded="true" aria-controls="collapseCabinOverview">
+      Property Overview
+    </button>
+  </h2>
+  <div id="collapseCabinOverview" class="accordion-collapse collapse show">
+    <div class="accordion-body">
+      <ul>
+        <li><i class="fa-solid fa-cabin"></i> <strong>Property Type:</strong> Cabin</li>
+        <li><i class="fa-solid fa-house"></i> <strong>Accommodation:</strong> Entire Home</li>
+        <li><i class="fa-solid fa-mountain-sun"></i> <strong>Setting & View:</strong> Mountain View, Rural</li>
+      </ul>
     </div>
+  </div>
+</div>
+
+<!-- House Rules -->
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCabinRules" aria-expanded="false" aria-controls="collapseCabinRules">
+      House Rules
+    </button>
+  </h2>
+  <div id="collapseCabinRules" class="accordion-collapse collapse">
+    <div class="accordion-body">
+      <ul>
+        <li><i class="fa-solid fa-users-line"></i> <strong>Maximum Occupancy:</strong> 2</li>
+        <li><i class="fa-solid fa-child"></i> <strong>Children & Infants:</strong> Welcome</li>
+        <li><i class="fa-solid fa-smoking-ban"></i> <strong>Smoking:</strong> Not allowed</li>
+        <li><i class="fa-solid fa-wheelchair"></i> <strong>Wheelchair Inaccessible</strong></li>
+        <li><i class="fa-solid fa-user-check"></i> <strong>Minimum Age of Primary Renter:</strong> 21</li>
+        <li><i class="fa-solid fa-paw"></i> <strong>Pets:</strong> Not allowed</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Amenities -->
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCabinAmenities" aria-expanded="false" aria-controls="collapseCabinAmenities">
+      Amenities
+    </button>
+  </h2>
+  <div id="collapseCabinAmenities" class="accordion-collapse collapse">
+    <div class="accordion-body">
+      <ul>
+        <li><i class="fa-solid fa-wifi"></i> <strong>General:</strong> Internet, Linens Provided, Towels Provided, Hot Water, Hair Dryer, Wifi, Toilet Paper, Private Entrance, Extra Pillows & Blankets, Free Internet</li>
+        <li><i class="fa-solid fa-utensils"></i> <strong>Kitchen:</strong> Refrigerator, Microwave, Dishes & Utensils, Spices/Pantry Items, Coffee Maker, Kettle, Kitchenette, Pots & Pans, Dining Table</li>
+        <li><i class="fa-solid fa-tv"></i> <strong>Entertainment:</strong> Television</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Outdoor & Parking -->
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCabinOutdoor" aria-expanded="false" aria-controls="collapseCabinOutdoor">
+      Outdoor & Parking
+    </button>
+  </h2>
+  <div id="collapseCabinOutdoor" class="accordion-collapse collapse">
+    <div class="accordion-body">
+      <ul>
+        <li><i class="fa-solid fa-bbq"></i> <strong>Outdoor:</strong> Deck/Patio (uncovered), Outdoor Dining</li>
+        <li><i class="fa-solid fa-car"></i> <strong>Vehicles:</strong> Parking, Free Parking, Free Parking On Premises</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Theme -->
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCabinTheme" aria-expanded="false" aria-controls="collapseCabinTheme">
+      Theme
+    </button>
+  </h2>
+  <div id="collapseCabinTheme" class="accordion-collapse collapse">
+    <div class="accordion-body">
+      <ul>
+        <li><i class="fa-solid fa-heart"></i> <strong>Theme:</strong> Romantic</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Leisure & Adventure -->
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCabinLeisure" aria-expanded="false" aria-controls="collapseCabinLeisure">
+      Leisure & Adventure
+    </button>
+  </h2>
+  <div id="collapseCabinLeisure" class="accordion-collapse collapse">
+    <div class="accordion-body">
+      <ul>
+        <li><i class="fa-solid fa-binoculars"></i> <strong>Leisure:</strong> Bird Watching, Horseback Riding, Wildlife Viewing, Water Sports</li>
+        <li><i class="fa-solid fa-bicycle"></i> <strong>Sports & Adventure:</strong> Cycling, Fishing, Golf, Hiking, Kayaking, Mountain Biking, Mountain Climbing, Mountaineering, Sailing, Skiing, Snowboarding</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Safety Features -->
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCabinSafety" aria-expanded="false" aria-controls="collapseCabinSafety">
+      Safety Features
+    </button>
+  </h2>
+  <div id="collapseCabinSafety" class="accordion-collapse collapse">
+    <div class="accordion-body">
+      <ul>
+        <li><i class="fa-solid fa-shield-halved"></i> <strong>Safety:</strong> Carbon Monoxide Detector, Fire Extinguisher, First Aid Kit, Smoke Detector</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Expectations -->
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCabinExpectations" aria-expanded="false" aria-controls="collapseCabinExpectations">
+      Expectations
+    </button>
+  </h2>
+  <div id="collapseCabinExpectations" class="accordion-collapse collapse">
+    <div class="accordion-body">
+      <ul>
+        <li><i class="fa-solid fa-stairs"></i> <strong>Requires Stairs</strong></li>
+        <li><i class="fa-solid fa-paw"></i> <strong>Pets Live at Property</strong></li>
+      </ul>
+    </div>
+  </div>
+</div>
 
 
 
+<!-- Modal -->
+<div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="bookingModalLabel">Booking or Inquiry</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <!-- OwnerRez Widget -->
+              <!-- OwnerRez Booking/Inquiry widget for Back Room -->
+              <div class="ownerrez-widget" data-widgetId="5ca77b42b6884e43bde5cd1ab9777f7d" data-propertyId="7ce7a593fb1344d3a353f6b26e97a4c8" data-widget-type="Booking/Inquiry"></div>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+</div>
 
 
+
+            </div>
+            <div class="container mt-5">
+              <!-- Your custom div with Bootstrap classes -->
+              <div class="row justify-content-center">
+                  <div class="col-md-8">
+                      <!-- OwnerRez Reviews widget -->
+                      <div class="ownerrez-widget" data-widget-type="pods - Reviews" data-widgetId="38230cb3ecc54bcaad1b84fffc0f9cb7"></div>
+                      <script src="https://secure.ownerrez.com/widget.js"></script>
+                  </div>
+              </div>
+          </div>
 
 <footer class="footer mt-auto py-3 bg-light">
   <div class="container-fluid">
@@ -189,7 +352,7 @@
 
    
 
-
+<script src="https://kit.fontawesome.com/a8c01cd9e4.js" crossorigin="anonymous"></script>
 <script src="../script.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://secure.ownerrez.com/widget.js"></script>
