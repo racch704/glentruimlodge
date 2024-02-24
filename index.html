@@ -15,6 +15,24 @@
     height: 6em;
 }
 
+.footer-map {
+    padding: 0;
+    }
+  
+    .footer {
+    padding: 0;
+    padding: 0 !important;
+    }
+
+
+.bed_breakfast {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+
   </style>
   </head>
 
@@ -63,48 +81,32 @@
 
 
 
-          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
+            <!-- Static Text Overlay -->
+            <div class="carousel-caption d-none d-md-block">
+                <h5>WELCOME TO</h5>
+                <h1>Glentruim Lodge</h1>
+                <h2>B&B and Pods</h2>
+                <div class="center-buttons">
+                    <a href="accomodation/upper-pod.html" class="btn btn-primary book-button rounded-0">Book Pods</a>
+                    <a href="b&b.html" class="btn btn-primary book-button rounded-0">Book B&B</a>
+                </div>
+            </div>
             <div class="carousel-inner">
+                <!-- Carousel items -->
                 <div class="carousel-item active">
-                    <img src="img/index/_MG_5731-op-nofence-1000pxls.jpg" class="d-block w-100" alt="Glentruim Lodge View">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>WELCOME TO</h5>
-                        <h1>Glentruim Lodge</h1>
-                        <h2>B&B and Pods</h2>
-                        <div class="center-buttons">
-                            <a href="accomodation/upper-pod.html" class="btn btn-primary book-button rounded-0">Book Pods</a>
-                            <a href="b&b.html" class="btn btn-primary book-button rounded-0">Book B&B</a>
-                        </div>
-                    </div>
+                    <img src="img/index/hero-1.jpg" class="d-block w-100" alt="Glentruim Lodge View">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/pods/lower_pod/front_lp_close.jpg" class="d-block w-100" alt="Lower Pod Close View">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>WELCOME TO</h5>
-                        <h1>Glentruim Lodge</h1>
-                        <h2>B&B and Pods</h2>
-                        <div class="center-buttons">
-                            <a href="accomodation/upper-pod.html" class="btn btn-primary book-button rounded-0">Book Pods</a>
-                            <a href="b&b.html" class="btn btn-primary book-button rounded-0">Book B&B</a>
-                        </div>
-                    </div>
+                    <img src="img/index/hero-2.jpg" class="d-block w-100" alt="Lower Pod Close View">
                 </div>
                 <div class="carousel-item">
                     <img src="img/pods/upper_pod/upperpod_outside1440.jpg" class="d-block w-100" alt="Upper Pod Outside View">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>WELCOME TO</h5>
-                        <h1>Glentruim Lodge</h1>
-                        <h2>B&B and Pods</h2>
-                        <div class="center-buttons">
-                            <a href="accomodation/upper-pod.html" class="btn btn-primary book-button rounded-0">Book Pods</a>
-                            <a href="b&b.html" class="btn btn-primary book-button rounded-0">Book B&B</a>
-                        </div>
-                    </div>
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
@@ -116,6 +118,7 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
+        
         
         <div class="container eco-pods my-5 col-lg-10">
             <div class="row">
@@ -175,21 +178,21 @@
                   <!-- Image 1 -->
                   <div class="col">
                     <div class="image-overlay">
-                      <img src="img/index/rejuvinate.jpg" alt="" class="img-fluid">
+                      <img src="img/index/bfast_sm.jpg" alt="Restful bedroom" class="bed_breakfast">
                     </div>
                     <div class="text-bb">REST</div>
                   </div>
                   <!-- Image 2 -->
                   <div class="col">
                     <div class="image-overlay">
-                      <img src="img/index/rejuvinate.jpg" alt="" class="img-fluid">
+                      <img src="img/index/bed_sml.jpg" alt="Breakfast spread" class="bed_breakfast">
                     </div>
                     <div class="text-bb">RECHARGE</div>
                   </div>
                   <!-- Image 3 -->
                   <div class="col">
                     <div class="image-overlay">
-                      <img src="img/index/rejuvinate.jpg" alt="" class="img-fluid">
+                      <img src="img/index/rejuvinate.jpg" alt="Beautiful nature view" class="bed_breakfast">
                     </div>
                     <div class="text-bb">REJUVENATE</div>
                   </div>
@@ -198,17 +201,29 @@
             </div>
           </div>
 
+
+
+          
+
 <footer class="footer mt-auto py-3 bg-light">
   <div class="container-fluid">
     <div class="row">
       <!-- Map Column -->
       <div class="col-md-6 footer-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2171.4643272006715!2d-4.179412786482041!3d57.02647617347204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488f4911b2bda975%3A0xc8847f833a1a3094!2sGlentruim%20Homestay%20B%26B%20and%20Ecopod!5e0!3m2!1sen!2suk!4v1700417375337!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+  width="100%"
+  height="100%"
+  style="border:0"
+  allowfullscreen
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2171.4643272006715!2d-4.179412786482041!3d57.02647617347204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488f4911b2bda975%3A0xc8847f833a1a3094!2sGlentruim%20Homestay%20B%26B%20and%20Ecopod!5e0!3m2!1sen!2suk!4v1700417375337!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+</iframe>
       </div>
+
+      
       
       <!-- Contact Details Column -->
       <div class="col-md-6 footer-contact">
-        <div class="text-center py-5">
+        <div class="text-left py-5">
           <h2>SEE YOU SOON</h2>
           <p><strong>PHONE NUMBER</strong><br>Robert: 0777129842<br>Maria: 075354551</p>
           <p><strong>EMAIL</strong><br>glentruimlodge@gmail.com</p>
@@ -223,6 +238,8 @@
     </div>
   </div>
 </footer>
+
+
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

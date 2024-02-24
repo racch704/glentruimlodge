@@ -1,5 +1,16 @@
+@font-face {
+  font-family: 'Hanken';
+  src: url('../fonts/Hanken_Grotesk/HankenGrotesk-VariableFont_wght.ttf') format('truetype'), /* Fallback for older browsers */
+       url('../fonts/Hanken_Grotesk/HankenGrotesk-VariableFont_wght.woff') format('woff'), /* Modern browsers */
+       url('../fonts/Hanken_Grotesk/HankenGrotesk-VariableFont_wght.woff2') format('woff2'); /* Super modern browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 body {
     background-color: #fffff3 !important;
+    font-family: 'Hanken', sans-serif; /* Use the font-family you defined above */
 }
 
 /** NAVIGATION **/
@@ -9,6 +20,7 @@ nav {
 
 .navbar {
     opacity: 1;
+    font-family: Hanken, sans-serif;
     background-color: #f4f2e900; 
     z-index:10;
     margin-bottom: 0 !important; /* The !important rule is to ensure it overrides any other styles */
@@ -90,6 +102,17 @@ nav ul {
 .carousel-caption {
     background-color: #000b063e;
     margin-bottom: 20em;
+}
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 20%;
+  left: 15%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
 }
 
 .carousel-caption h1 {
@@ -198,8 +221,6 @@ div.container:nth-child(3) {
   }
 
   .image-overlay img {
-    width: 100%;
-    height: auto;
     display: block;
   }
 
@@ -240,11 +261,12 @@ div.container:nth-child(3) {
     padding-top: 2em !important;
 }
 
-.logo img 
-{
-    height: 6em;
+.bed_breakfast {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
-
 
 /** Ownerrez **/
 .availability {
@@ -253,25 +275,45 @@ div.container:nth-child(3) {
 
 /** FOOTER **/
 
-.footer-map {
-    background-image: url('path-to-your-map-image.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 350px; /* Adjust as needed */
+.footer > div:nth-child(1) > div:nth-child(1) {
+  background-color: #829c64 !important;
   }
 
-  .footer-contact {
-    background-color: #f8f9fa; /* Light grey background, adjust color as needed */
-    color: #212529; /* Adjust text color as needed */
+  .footer  {
+    color: #f2f4ea; /* Adjust heading color as needed */
   }
+  
+
+  .text-left {
+    padding-left: 20%;
+    }
+
+  .text-left p {
+    padding-top: 2em;
+  }
+
+  .footer-map {
+    padding: 0;
+    }
+  
+    .footer {
+    padding: 0;
+    padding: 0 !important;
+    }
+
+
+
 
   .footer-contact h2 {
-    color: #212529; /* Adjust heading color as needed */
+    color: #f2f4ea; /* Adjust heading color as needed */
+    padding-bottom: .5em;
   }
 
   .social-icons {
     font-size: 24px; /* Adjust icon size as needed */
   }
+
+
 
 /** MOBILE STYLING **/
 

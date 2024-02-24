@@ -41,10 +41,7 @@ nav ul {
     list-style-type: none;
 }
 
-.amenities li {
-    display: inline;
-    padding: 0 1em;
-}
+
 
 .room {
     display: grid;
