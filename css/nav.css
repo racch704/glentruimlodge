@@ -1,16 +1,37 @@
 @font-face {
-  font-family: 'Hanken';
-  src: url('../fonts/Hanken_Grotesk/HankenGrotesk-VariableFont_wght.ttf') format('truetype'), /* Fallback for older browsers */
-       url('../fonts/Hanken_Grotesk/HankenGrotesk-VariableFont_wght.woff') format('woff'), /* Modern browsers */
-       url('../fonts/Hanken_Grotesk/HankenGrotesk-VariableFont_wght.woff2') format('woff2'); /* Super modern browsers */
+  font-family: 'Hanken Grotesk';
+  src: url('fonts/Hanken_Grotesk/HankenGrotesk-VariableFont_wght.ttf') format('truetype'),
+       url('fonts/Hanken_Grotesk/HankenGrotesk-Italic-VariableFont_wght.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 
+@font-face {
+  font-family: 'Vollkorn';
+  src: url('fonts/Vollkorn/Vollkorn-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Vollkorn italic';
+  src: url('fonts/Vollkorn/Vollkorn-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+h1 {
+  font-family: 'Vollkorn', serif;
+}
+
+
+
+
+
 body {
     background-color: #fffff3 !important;
-    font-family: 'Hanken', sans-serif; /* Use the font-family you defined above */
+    font-family: 'Hanken Grotesk', sans-serif; /* Use the font-family you defined above */
 }
 
 /** NAVIGATION **/
@@ -62,6 +83,10 @@ nav ul {
     margin-right: auto;
 }
 
+
+h1 {
+  font-family: 'Hanken Grotesk', sans-serif;
+}
 
 /** CAROUSEL IMG **/
 
@@ -266,6 +291,22 @@ div.container:nth-child(3) {
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+
+/** Ammenities  **/
+
+#accordionPanelsStayOpenExample {
+  display: grid;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+ul {
+    list-style-type: none;
+}
+i {
+    margin-right: 1em;
 }
 
 /** Ownerrez **/

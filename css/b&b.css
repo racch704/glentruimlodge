@@ -20,10 +20,6 @@ nav ul {
     display: inline-block;
  }
 
- .navbar-nav {
-    align-items: center;
- }
-
  .custom-mr-auto {
     margin-left: auto;
 }
@@ -41,8 +37,6 @@ nav ul {
     list-style-type: none;
 }
 
-
-
 .room {
     display: grid;
     margin-left: auto;
@@ -52,9 +46,25 @@ nav ul {
 /** second navication **/
 
 .active {
-    background-color: red !important;
+    background-color: #6e8256 !important;
+    padding: .5em 1em !important;
+    color: #fffff3 !important;
+}
+.active:hover {
+    background-color: #829c64 !important;
     padding: .5em 1em !important;
 }
+.non-active{
+    background-color: transparent !important;
+    padding: .5em 1em !important;
+}
+.non-active:hover{
+    background-color: #829c64 !important;
+    padding: .5em 1em !important;
+    color: #fffff3 !important;
+}
+
+
 .second-nav li {
     padding: 0 .7em;
 }
