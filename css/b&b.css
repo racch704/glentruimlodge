@@ -1,5 +1,5 @@
 body {
-    background-color: #fffff3 !important;
+    background-color: #f2f4ea !important;
 }
 
 /** NAVIGATION **/
@@ -92,6 +92,21 @@ img {
 }
 
 
+.d-flex > div {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+  }
+  
+  /* To make sure both divs are the same height, we'll use a padding-top trick */
+  .room-image, .bathroom-image {
+    width: 25% !important; /* Adjust width if necessary */
+    padding-top: 33%; /* This percentage determines the aspect ratio of the images */
+  }
+  
+  
+  
+
 
 .btn-custom {
     background-color: #829c64 !important; /* Example button color */
@@ -100,7 +115,7 @@ img {
     padding: 10px 20px;
     border-radius: 0 !important; /* Remove border radius for a sharp edge look */
     border: none !important; /* Remove border */
-    margin: 2em 0 6em 0;
+    margin: 2em 0 3em 0;
   }
   
   .btn-custom:hover {
@@ -125,9 +140,21 @@ img {
 
 
 /** Ownerrez **/
+.availability > div:nth-child(1) {
+    display: grid;
+    margin-right: auto;
+    margin-left: auto;
+    }
+
+
 .ownerrez-widget {
     width: 100%; /* Adjust as necessary */
     max-width: 100%; /* Prevent it from growing larger than its container */
+}
+.modal img {
+    max-width: 100%;
+    height: auto;
+
 }
 
 .col-8 {
@@ -150,3 +177,22 @@ img {
 .modal-content {
     border-radius: 5px;
 }
+
+.list {
+    padding: 0 !important;
+}
+
+p {
+    max-width: 80vw !important; /* vw units are a percentage of the viewport width */
+  }
+  
+
+  .overview-icons li {
+    display: inline-block;
+    padding-right: 1em;
+  }
+
+
+  .overview-icons {
+    padding-left: 0 !important;
+    }

@@ -30,41 +30,27 @@ h1 {
 
 
 body {
-    background-color: #fffff3 !important;
+    background-color: #f2f4ea !important;
     font-family: 'Hanken Grotesk', sans-serif; /* Use the font-family you defined above */
 }
 
 /** NAVIGATION **/
-nav {
-  background-color:  #fffff3 !important; /* Adjust the background color as needed */
-}
 
+a.d-none > img:nth-child(1) {
+  width: 4.5em;
+}
 .navbar {
-    opacity: 1;
-    font-family: Hanken, sans-serif;
-    background-color: #f4f2e900; 
-    z-index:10;
-    margin-bottom: 0 !important; /* The !important rule is to ensure it overrides any other styles */
+  background-color: #f2f4ea !important;
 }
 
-nav ul {
-    list-style: none;
-    text-align: center;
+.dt-logo {
+  text-align: center;
+  padding: 0 2em;
 
- }
- 
- nav ul li {
-    display: inline-block;
- }
 
- .navbar-nav {
-    align-items: center;
- }
-
- .custom-mr-auto {
-    margin-left: auto;
 }
 
+/**
 .dt-logo {
     text-align: center;
     padding: 0 2em;
@@ -79,20 +65,35 @@ nav ul {
     margin-right: auto;
   }**/
 
-.navbar .navbar-brand {
-    margin-right: auto;
+
+.main-nav li {
+    display: inline-block;
+    padding: 0 1em;
+    font-size: 1.3em;
+    font-weight: 550;
+    letter-spacing: 1px;
+    font-family: 'Volkron';
+}
+
+.main-nav li a {
+    color: #355033 !important;
+}
+
+.main-nav li a:hover {
+    color: #708d52 !important;
+    font-weight: 575;
 }
 
 
-h1 {
-  font-family: 'Hanken Grotesk', sans-serif;
-}
+
+  .navbar-brand {
+    margin: 0 !important;
+    }
 
 /** CAROUSEL IMG **/
 
 .carousel-img {
     height: 100vh;
-    width: 100vw;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -101,12 +102,12 @@ h1 {
 
 }
 
-.carousel-item {
-  height: 100vh !important;
+.carousel, .carousel-item {
+  height: 100vh; 
 }
 
 .carousel a {
-  color: #f1efe9 !important; /* Adjust link color as needed */
+  color: #f2f4ea !important; /* Adjust link color as needed */
 }
 
 .bg-img-1 {
@@ -124,10 +125,17 @@ h1 {
 
 /** CAROUSEL TEXT **/
 
+
 .carousel-caption {
-    background-color: #000b063e;
-    margin-bottom: 20em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* This will vertically center the items in the container */
+  align-items: center; /* This will horizontally center the items */
+  background-color: #000b063e;
+  margin-bottom: 20em;
 }
+
+
 .carousel-caption {
   position: absolute;
   right: 15%;
@@ -155,6 +163,22 @@ h1 {
     text-transform: uppercase;
     padding: 10px 20px !important; /* example padding */
     font-weight: bold !important; /* makes the text bold */
+}
+
+
+/* Responsive font sizes for smaller screens */
+@media (max-width: 768px) {
+  .carousel-caption h1 {
+      font-size: 2.5em;
+  }
+
+  .carousel-caption h5 {
+      font-size: 1em;
+  }
+
+  .carousel-caption .btn {
+      padding: 5px 10px; /* Smaller padding for smaller screens */
+  }
 }
 
 

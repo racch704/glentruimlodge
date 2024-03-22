@@ -4,10 +4,11 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <link rel="icon" href="img/" type="image/x-icon">
     <title>Glentruim</title>
     <link rel="stylesheet" href="css/nav.css" />
-    <link rel="icon" href="images/favicon.png" />
+    <link rel="icon" href="img/favicon_rounded.png" type="image/svg+xml">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   </head>
 
@@ -17,33 +18,32 @@
 
  
       <!-- NAVIGATION -->
-      <nav class="navbar sticky-top navbar-expand-lg" >
-        <div class="container-fluid justify-content-center">
-            <a class="navbar-brand order-0 d-lg-none" href="#">Logo</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-start">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
+
+
+      <nav class="navbar sticky-top  navbar-expand-lg main-nav">
+        <div class="container-fluid">
+          <a class="navbar-brand order-0 d-none d-lg-block dt-logo" href="index.html"><img src="img/Logo_No_Text.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
               <li class="nav-item">
                 <a class="nav-link" href="about.html">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="b&b.html">B&B</a>
               </li>
-                <a class="navbar-brand order-0 d-none d-lg-block dt-logo" href="#">Logo</a>
               <li class="nav-item">
                 <a class="nav-link" href="accomodation/upper-pod.html">Ecopods</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="location.html">Location</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact Us</a>
-              </li>
+            </ul>
           </div>
         </div>
       </nav>
@@ -77,7 +77,7 @@
                     <img src="img/index/hero-1.jpg" class="d-block w-100" alt="Glentruim Lodge View">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/index/hero-2.jpg" class="d-block w-100" alt="Lower Pod Close View">
+                    <img src="img/pods/lower_pod/chosen_panorama7-op2masks+chickens-skyrt-6000 Final-v2_1(1).JPG" class="d-block w-100" alt="Lower Pod Close View">
                 </div>
                 <div class="carousel-item">
                     <img src="img/pods/upper_pod/upperpod_outside1440.jpg" class="d-block w-100" alt="Upper Pod Outside View">
@@ -93,9 +93,6 @@
             </button>
         </div>
         
-        
-     
-          
          
 
        <div class="container eco-pods my-5 col-lg-10">
@@ -121,63 +118,64 @@
             </div>
         </div>
 
-        <div class="container mt-5 bedbreakfast">
-            <div class="row align-items-center bedbreakfast">
-              <!-- Text Column -->
-              <div class="col-lg-4 mb-4 mb-lg-0">
-                <h2 class="mb-3">Bed and Breakfast</h2>
-                <hr class="line">
-                <p class="bb-text">We have three comfy bedrooms to choose from – a king-size room with its own shower-room, and two double rooms (perfect for families!) that share a shower-room.  A delicious light breakfast is always included with your stay, and kids are welcome too.  You'll also have access to our kitchen if you'd like to whip up snacks or other meals during your visit.</p>
-                <div class="bb-book">
-                <button class="btn btn-custom">Book</button>
-            </div>
-              </div>
-              <!-- Images Column -->
-              <div class="col-lg-8">
-                <div class="row row-cols-1 row-cols-md-3 g-4 equal-height-img">
-                  <!-- Image 1 -->
-                  <div class="col">
-                    <div class="image-overlay">
-                      <img src="img/index/bed_sml.jpg" alt="Breakfast spread" class="bed_breakfast">
-                    </div>
-                    <div class="text-bb">REST</div>
-                  </div>
-                  <!-- Image 2 -->
-                  <div class="col">
-                    <div class="image-overlay">
-                      <img src="img/index/bfast_sm.jpg" alt="Restful bedroom" class="bed_breakfast">
-                    </div>
-                    <div class="text-bb">RECHARGE</div>
-                  </div>
-                  <!-- Image 3 -->
-                  <div class="col">
-                    <div class="image-overlay">
-                      <img src="img/index/rejuvinate.jpg" alt="Beautiful nature view" class="bed_breakfast">
-                    </div>
-                    <div class="text-bb">REJUVENATE</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
 
  <div class="background-image">
             <div class="container h-100">
                 <div class="row h-70 align-items-center">
                     <div class="col-md-6">
-                        <h2 class="location-h2">LOCATION</h2>
+                        <h2 class="location-h2">GET TO US</h2>
                     </div>
                     <div class="col-md-6 location-text content-area">
-                        <h3 class="lead">- BY CAR</h3>
+                        <h3 class="lead"><strong>- BY CAR</strong></h3>
                         <p>We are located about 1 mile from the A9, approximately one hour from both Perth and Inverness. We are ideally situated as a stopover on the way to the Isle of Skye.</p>
-                        <h3 class="lead">- BY BICYCLE</h3>
+                        <h3 class="lead"><strong>- BY BICYCLE</strong></h3>
                         <p>National Cycle Route 7 runs beside the A9 just 1 mile away. We are 4 miles south of Newtonmore and about 9 miles from Dalwhinnie. You can store your bicycles securely overnight.</p>
-                        <h3 class="lead">- BY TRAIN</h3>
+                        <h3 class="lead"><strong>- BY TRAIN</strong></h3>
                         <p>The nearest train station is Newtonmore, which is about 4 miles away. Kingussie train station is only 6 miles away and is served by many more trains. If you are arriving by train, we can usually arrange in advance to collect you from the station for a modest fee.</p>
                     </div>
                 </div>
             </div>
+        </div>
+
+
+        <div class="container mt-5 bedbreakfast">
+          <div class="row align-items-center bedbreakfast">
+            <!-- Text Column -->
+            <div class="col-lg-4 mb-4 mb-lg-0">
+              <h2 class="mb-3">Bed and Breakfast</h2>
+              <hr class="line">
+              <p class="bb-text">We have three comfy bedrooms to choose from – a king-size room with its own shower-room, and two double rooms (perfect for families!) that share a shower-room.  A delicious light breakfast is always included with your stay, and kids are welcome too.  You'll also have access to our kitchen if you'd like to whip up snacks or other meals during your visit.</p>
+              <div class="bb-book">
+              <button class="btn btn-custom">Book</button>
+          </div>
+            </div>
+            <!-- Images Column -->
+            <div class="col-lg-8">
+              <div class="row row-cols-1 row-cols-md-3 g-4 equal-height-img">
+                <!-- Image 1 -->
+                <div class="col">
+                  <div class="image-overlay">
+                    <img src="img/index/bed_sml.jpg" alt="Breakfast spread" class="bed_breakfast">
+                  </div>
+                  <div class="text-bb">REST</div>
+                </div>
+                <!-- Image 2 -->
+                <div class="col">
+                  <div class="image-overlay">
+                    <img src="img/index/bfast_sm.jpg" alt="Restful bedroom" class="bed_breakfast">
+                  </div>
+                  <div class="text-bb">RECHARGE</div>
+                </div>
+                <!-- Image 3 -->
+                <div class="col">
+                  <div class="image-overlay">
+                    <img src="img/index/rejuvinate.jpg" alt="Beautiful nature view" class="bed_breakfast">
+                  </div>
+                  <div class="text-bb">REJUVENATE</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
           
 
