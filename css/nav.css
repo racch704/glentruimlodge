@@ -21,9 +21,14 @@
   font-style: italic;
 }
 
-h1 {
-  font-family: 'Vollkorn', serif;
+@font-face {
+  font-family: 'Gabriola';
+  src: url('fonts/Gabriola.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
+
+
 
 
 
@@ -36,11 +41,15 @@ body {
 
 /** NAVIGATION **/
 
+
+
 a.d-none > img:nth-child(1) {
   width: 4.5em;
 }
 .navbar {
   background-color: #f2f4ea !important;
+  justify-content: center !important;
+  display: grid !important;
 }
 
 .dt-logo {
@@ -149,12 +158,22 @@ a.d-none > img:nth-child(1) {
 }
 
 .carousel-caption h1 {
-    font-size: 5em;
+    font-size: 7em;
+    font-family: 'Gabriola';
+
 }
 
 .carousel-caption h5 {
     font-size: 1em;
+    font-family: 'Hanken Grotesk' !important;
+    letter-spacing: 301;
 }
+
+.carousel-caption > h1:nth-child(2) {
+  margin-bottom: 0;
+}
+
+
 
 .btn {
     background-color: #f2f4ea2e!important; /* semi-transparent white */
