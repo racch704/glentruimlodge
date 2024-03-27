@@ -103,25 +103,15 @@ img {
     width: 25% !important; /* Adjust width if necessary */
     padding-top: 33%; /* This percentage determines the aspect ratio of the images */
   }
-  
-
-      
-      .room-image {
+      .room-image, .bed-image{
         width: 50% !important; /* Adjust width if necessary */
         padding-top: 33%; /* This percentage determines the aspect ratio of the images */
       }
 
-      @media screen and (max-width: 900px) {
-        .bathroom-image {
-          width: 50% !important; /* Adjust width if necessary */
-          padding-top: 33%; /* This percentage determines the aspect ratio of the images */
-        }
-        .room-image {
-          width: 100% !important; /* Adjust width if necessary */
-          padding-top: 33%; /* This percentage determines the aspect ratio of the images */
-        }
-        
-      }
+.king {
+    width: 50% !important; /* Adjust width if necessary */
+    padding-top: 33%; /* This percentage determines the aspect ratio of the images */
+}
     
 
 

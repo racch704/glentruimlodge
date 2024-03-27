@@ -1,0 +1,23 @@
+.intro {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7%;
+  }
+
+.about-area {
+    margin-top: 10%;
+} 
+
+.about-hosts {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+  
+
+div.col-4:nth-child(1) > div:nth-child(1) > div:nth-child(2) {
+    margin: 0;
+    padding: 1em 0;
+  }
+   
