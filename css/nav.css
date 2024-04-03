@@ -6,21 +6,6 @@
   font-style: normal;
 }
 
-
-@font-face {
-  font-family: 'Vollkorn';
-  src: url('fonts/Vollkorn/Vollkorn-VariableFont_wght.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Vollkorn italic';
-  src: url('fonts/Vollkorn/Vollkorn-Italic-VariableFont_wght.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
-}
-
 @font-face {
   font-family: 'Gabriola';
   src: url('fonts/Gabriola.ttf') format('truetype');
@@ -42,8 +27,7 @@ body {
 /** NAVIGATION **/
 
 
-
-a.d-none > img:nth-child(1) {
+.navbar-brand img{
   width: 4.5em;
 }
 .navbar {
@@ -55,42 +39,27 @@ a.d-none > img:nth-child(1) {
 .dt-logo {
   text-align: center;
   padding: 0 2em;
-
-
 }
-
-/**
-.dt-logo {
-    text-align: center;
-    padding: 0 2em;
-  }
-
-/**
-.nav-logo img {
-    text-align: center;
-    height: 6em;
-    display: grid;
-    margin-left: auto;
-    margin-right: auto;
-  }**/
-
 
 .main-nav li {
     display: inline-block;
     padding: 0 1em;
-    font-size: 1.3em;
-    font-weight: 550;
+    font-size: 1.5em;
+    font-weight: 500;
     letter-spacing: 1px;
-    font-family: 'Volkron';
+    font-family: "vollkorn", serif;
 }
 
-.main-nav li a {
-    color: #355033 !important;
+
+
+.nav-link {
+  transition: text-shadow 0.3s ease; /* Smooth transition for a nicer effect */
+  color: #40613e !important;
 }
 
-.main-nav li a:hover {
-    color: #708d52 !important;
-    font-weight: 575;
+
+.nav-link:hover {
+  text-shadow: 0.5px 0 0 currentColor, -0.5px 0 0 currentColor; /* Mimics bold */
 }
 
 
@@ -99,118 +68,94 @@ a.d-none > img:nth-child(1) {
     margin: 0 !important;
     }
 
-/** CAROUSEL IMG **/
+    
 
-.carousel-inner {
-    height: 100vh;
-    position: relative;
-    z-index: 1;
-}
-.carousel-img {
-    height: 100vh !important;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    z-index:5;
-    position: top;
-
+/* CAROUSEL IMG */
+.carousel-item {
+  height: calc(100vh - 56px); /* Adjust based on navbar height */
+  background-size: cover;
+  background-position: center;
 }
 
-.carousel, .carousel-item {
-  height: 100vh; 
-}
-
-.carousel a {
-  color: #f2f4ea !important; /* Adjust link color as needed */
-}
-
-.bg-img-1 {
-    background-image: url(../img/index/index_home.jpg);
-
-}
-
-.bg-img-2 {
-    background-image: url(../img/index/front_lp_wideshot.jpg);
-}
-
-.bg-img-3 {
-    background-image: url(../img/index/pods_context.png);
-}
-
-/** CAROUSEL TEXT **/
-
-
+/* CAROUSEL CAPTION */
 .carousel-caption {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* This will vertically center the items in the container */
-  align-items: center; /* This will horizontally center the items */
-  background-color: #000b063e;
-}
-
-
-.carousel-caption {
+  bottom: 20% !important; /* Corrected to a single bottom property */
   right: 15%;
-  bottom: 20%;
   left: 15%;
-  z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: #fff;
-  text-align: center;
+  background-color: rgba(0, 0, 0, 0.242);
+  padding: 20px;
+  border-radius: 8px;
 }
+
+/* ADJUSTMENTS FOR SMALLER SCREENS */
+
+@media (max-width: 768px) {
+  .carousel-caption h1 {
+    font-size: 5rem !important;
+  }
+
+  .carousel-caption h2 {
+    font-size: 2rem !important;
+  }
+
+  .carousel-caption h5 {
+    font-size: 1.5rem !important;
+  }
+
+  .carousel-caption .btn, .carousel a .btn { /* Adjusted selector for consistency */
+    min-width: 175px !important; /* Ensures a minimum width for all buttons */
+    font-size: .9em;
+  }
+  
+}
+
+/* BUTTON STYLES */
+
+.carousel-caption .center-buttons {
+  display: flex; /* Added to ensure flexbox is applied */
+  justify-content: center; /* Center buttons horizontally */
+  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+  gap: 10px; /* Space between buttons */
+}
+
+.carousel-caption .btn, .carousel a .btn { /* Adjusted selector for consistency */
+  min-width: 200px; /* Ensures a minimum width for all buttons */
+  background-color: rgba(0, 0, 0, 0.242) !important; 
+  border: 1px solid #FFFFFF !important;
+  color: white !important; 
+  text-transform: uppercase;
+  padding: 10px 20px !important;
+  font-weight: bold !important; 
+}
+
+.carousel-caption .btn:hover, .carousel a .btn:hover { /* Adjusted selector for consistency */
+  background-color: #f2f4ea1f!important; 
+  color: white !important; 
+}
+
+/* TEXT STYLES */
 
 .carousel-caption h1 {
-    font-size: 7em;
-    font-family: 'Gabriola' !important;
-    line-height: 0.9 !important;
-
+  font-size: 7em;
+  font-family: 'Gabriola' !important;
+  font-weight: 550 !important;
+  line-height: 0.7 !important;
 }
 
 .carousel-caption h2 {
   font-size: 3em;
   font-family: 'Gabriola' !important;
   color: white !important;
-  line-height: 0.9 !important;
-
+  line-height: 0.7 !important;
+  font-weight: 300 !important;
 }
 
 .carousel-caption h5 {
-    font-size: 1em;
-    font-family: 'Hanken Grotesk' !important;
-    letter-spacing: 301;
+  font-size: 1em;
+  font-family: 'Hanken Grotesk' !important;
+  letter-spacing: 301;
 }
 
-.carousel-caption > h1:nth-child(2) {
-  margin-bottom: 0;
-}
-
-
-
-.btn {
-    background-color: #f2f4ea2e!important; /* semi-transparent white */
-    border: 1px solid #FFFFFF !important; /* solid white border */
-    color: #f1efe9 !important; /* black text */
-    text-transform: uppercase;
-    padding: 10px 20px !important; /* example padding */
-    font-weight: bold !important; /* makes the text bold */
-}
-
-
-/* Responsive font sizes for smaller screens */
-@media (max-width: 768px) {
-  .carousel-caption h1 {
-      font-size: 2.5em;
-  }
-
-  .carousel-caption h5 {
-      font-size: 1em;
-  }
-
-  .carousel-caption .btn {
-      padding: 5px 10px; /* Smaller padding for smaller screens */
-  }
-}
 
 /**** HEADINGS ****/
 
