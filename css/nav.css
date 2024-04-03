@@ -162,7 +162,16 @@ a.d-none > img:nth-child(1) {
 
 .carousel-caption h1 {
     font-size: 7em;
-    font-family: 'Gabriola';
+    font-family: 'Gabriola' !important;
+    line-height: 0.9 !important;
+
+}
+
+.carousel-caption h2 {
+  font-size: 3em;
+  font-family: 'Gabriola' !important;
+  color: white !important;
+  line-height: 0.9 !important;
 
 }
 
@@ -203,6 +212,23 @@ a.d-none > img:nth-child(1) {
   }
 }
 
+/**** HEADINGS ****/
+
+h2 {
+  font-family: "vollkorn", serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 3em !important;
+  color: #335772 !important;
+}
+
+.bedbreakfast h3 {
+  font-family: "vollkorn", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.8em;
+  color: #6e8256 !important;
+}
 
 /** ECO PODS **/
 
@@ -254,14 +280,14 @@ div.container:nth-child(3) {
 
 .content-area {
     background-color: #405c71; /* Semi-transparent black background */
-    color: white; /* White text color */
+    color: white !important; /* White text color */
     padding: 3rem; /* Padding around the text */
 }
 
 .location-h2 {
-    font-size: 4em;
+    font-size: 4em !important;
     text-align: center;
-    color: #f2f4ea;
+    color: #f2f4ea !important;
 }
 
 .location-text {
@@ -390,15 +416,46 @@ i {
 
 
 
-
   .footer-contact h2 {
-    color: #f2f4ea; /* Adjust heading color as needed */
+    color: #f2f4ea !important;  /* Adjust heading color as needed */
     padding-bottom: .5em;
   }
 
-  .social-icons {
-    font-size: 24px; /* Adjust icon size as needed */
+  .footer-contact a {
+    color: #f2f4ea !important; /* Adjust link color as needed */
   }
+
+  .footer-contact a:hover {
+    font-weight: 700 !important; /* Adjust link hover color as needed */
+  }
+
+  .footer-contact p strong {
+    font-family: 'volkron';
+    font-weight: 700;
+  }
+
+  .social-icons {
+    font-size: 2em; /* Adjust icon size as needed */  
+    padding-top: 1em;
+  }
+
+  .social-icons a:hover {
+    font-weight: 400  !important; /* Adjust icon hover color as needed */
+  }
+
+  .center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.fa-square-facebook {
+  color: #1b71b2;
+}
+.fa-square-instagram {
+  color: #aa318d;
+}
+
 
 
 

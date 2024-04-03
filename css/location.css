@@ -1,7 +1,27 @@
-div.col-4:nth-child(1) > div:nth-child(1) > div:nth-child(2) {
-    margin: 0;
-    padding: 1em 0;
-  }
+
+
+
+
+
+
+.card-body {
+    padding-left: 0 !important;
+    padding-right: 0 !important;  
+}
+
 .card-text {
     text-align: left;
 }
+
+h3 {
+  font-family: "vollkorn", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 4em;
+  color: #6e8256 !important;
+}
+
+a {
+  color: #335772 !important;
+}
+

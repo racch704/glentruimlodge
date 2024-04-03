@@ -108,10 +108,38 @@ img {
         padding-top: 33%; /* This percentage determines the aspect ratio of the images */
       }
 
-.king {
-    width: 50% !important; /* Adjust width if necessary */
-    padding-top: 33%; /* This percentage determines the aspect ratio of the images */
-}
+
+      .custom-img-wrapper > div {
+        width: 40%; /* Adjusted to make image containers narrower */
+        background-size: contain; /* Ensures the full image is visible */
+        background-repeat: no-repeat;
+        background-position: center center; /* Centers the image within the container */
+        margin: 0 1%; /* Maintains spacing between the images */
+        position: relative; /* Required for positioning the pseudo-element */
+    }
+    
+    .custom-img-wrapper > div:before {
+        content: "";
+        display: block;
+        padding-top: 100%; /* This controls the aspect ratio */
+    }
+    .custom-img-wrapper > div img {
+        width: 100%;
+        height: auto;
+        padding-top: 5px; /* Add or reduce as needed */
+        padding-bottom: 5px; /* Add or reduce as needed */
+    }
+    
+    
+    .custom-img-wrapper > div:first-child {
+        margin-right: 0.5%;
+        margin-left: 2%; /* Outer left margin for additional spacing */
+    }
+    
+    .custom-img-wrapper > div:last-child {
+        margin-left: 0.5%;
+        margin-right: 2%; /* Outer right margin for additional spacing */
+    }
     
 
 
@@ -143,8 +171,49 @@ img {
   i {
       margin-right: 1em;
   }
-  
 
+  .text h2 {
+    font-family: "vollkorn", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 4.5em;
+    color: #335772 !important;
+  }
+
+  .text h3 {
+    font-family: "vollkorn", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 2em;
+    color: #335772 !important;
+    padding-top: 1em;
+  }
+
+.amenities h2 button {
+    font-family: "vollkorn", serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: .5em !important;
+    color: #335772 !important;
+  
+  }
+
+  .amenities li strong {
+    font-family: "vollkorn", serif;
+    font-weight: ;
+    font-style: normal;
+    font-size: 1.1em;
+  }
+  
+.overview-icons {
+    padding-left: 0 !important;
+    color: #6c6d6e;
+}
+.amenities {
+    padding: 0 !important;
+    margin-top: 2em;
+
+}
 
 /** Ownerrez **/
 .availability > div:nth-child(1) {
@@ -152,6 +221,14 @@ img {
     margin-right: auto;
     margin-left: auto;
     }
+
+    .content-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
 
 
 .ownerrez-widget {

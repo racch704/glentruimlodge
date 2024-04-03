@@ -6,7 +6,7 @@
     margin-top: 7%;
   }
 
-.about-area {
+.group {
     margin-top: 10%;
 } 
 
@@ -16,8 +16,21 @@
 }
   
 
-div.col-4:nth-child(1) > div:nth-child(1) > div:nth-child(2) {
-    margin: 0;
-    padding: 1em 0;
+h2 {
+    font-family: "vollkorn", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 4.5em;
+    color: #335772 !important;
   }
-   
+  
+ a {
+    color: #f2f4ea !important;
+    text-decoration: none !important;
+  }
+
+  .more-info {
+    color: #335772 !important;
+    text-decoration: underline !important;
+
+  }
