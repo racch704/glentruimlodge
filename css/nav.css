@@ -175,6 +175,9 @@ h2 {
   color: #6e8256 !important;
 }
 
+.bedbreakfast .eco-pods {
+  height: 100vh;
+}
 /** ECO PODS **/
 
 .line {
@@ -186,11 +189,11 @@ h2 {
     margin: 40% 0;
 }
 
-div.col-md-6:nth-child(2) {
+.eco-pods div.col-md-6:nth-child(2) {
     margin-top: 6em;
     }
 
-div.container:nth-child(3) {
+.eco-pod div.container:nth-child(3) {
     margin-top: 10% !important;
     margin-bottom: 10% !important;
 }
@@ -215,30 +218,25 @@ div.container:nth-child(3) {
 
   /** LOCATION **/
 
-  .background-image {
-    background-image: url('../img/index/location.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 80vh; /* Adjust height as necessary */
-    background-attachment: fixed;
-}
 
-.content-area {
-    background-color: #405c71; /* Semi-transparent black background */
-    color: white !important; /* White text color */
-    padding: 3rem; /* Padding around the text */
-}
+  .content-area {
+    background-color: rgba(64, 92, 113, 0.728); 
+    color: white;
+    text-align: left;
+    padding: 5em !important;
+  }
 
-.location-h2 {
-    font-size: 4em !important;
-    text-align: center;
+  .content-area h3 {
+    font-size: 2em !important;
     color: #f2f4ea !important;
-}
+    font-family: "vollkorn", serif;
+  }
+  
+  .location-h2 {
+    color: #f2f4ea !important;
+    font-size: 4em !important;
+  }
 
-.location-text {
-    padding-left: 5em !important;
-    padding-right: 5em !important;
-}
 
 
 /** B&B **/
@@ -331,6 +329,14 @@ i {
   margin: 2em 0;
 }
 
+
+.reviews {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 /** FOOTER **/
 
 .footer > div:nth-child(1) > div:nth-child(1) {
@@ -399,6 +405,11 @@ i {
 }
 .fa-square-instagram {
   color: #aa318d;
+}
+
+
+.footer-map {
+  padding: 0 !important;
 }
 
 
