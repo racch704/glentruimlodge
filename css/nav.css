@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: 'Gabriola';
+  font-family: 'Gabriola', serif;
   src: url('fonts/Gabriola.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
@@ -137,14 +137,14 @@ body {
 
 .carousel-caption h1 {
   font-size: 7em;
-  font-family: 'Gabriola' !important;
+  font-family: 'Gabriola', serif !important;
   font-weight: 550 !important;
   line-height: 0.7 !important;
 }
 
 .carousel-caption h2 {
   font-size: 3em;
-  font-family: 'Gabriola' !important;
+  font-family: 'Gabriola', serif !important;
   color: white !important;
   line-height: 0.7 !important;
   font-weight: 300 !important;
