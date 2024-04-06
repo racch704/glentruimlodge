@@ -186,7 +186,7 @@ h2 {
 }
 
 .eco-pods {
-    margin: 40% 0;
+    margin-top: 10em !important;
 }
 
 .eco-pods div.col-md-6:nth-child(2) {
@@ -241,8 +241,8 @@ h2 {
 
 /** B&B **/
 .bedbreakfast {
-    margin-top: 7em !important; 
-    margin-bottom: 7em !important; 
+    margin-top: 10em !important; 
+    margin-bottom: 10em !important; 
 }
 
 .image-caption {
