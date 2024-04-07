@@ -182,7 +182,7 @@ h2 {
   font-weight: 800;
   font-style: normal;
   font-size: 3em;
-  color: #335772 !important;
+  color: #335772 ;
 }
 
 .bedbreakfast h3 {
@@ -260,30 +260,60 @@ h2 {
     font-size: 4em !important;
   }
 
+
+
+  /** REVIEWS **/
   .reviews {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     text-align: center;
-    overflow: hidden; /* Prevents the container from expanding */
+    height: 100vh;
+    overflow: hidden;
+    background-color: #405c71;
+    color: #f2f4ea !important;
   }
-  
+  .reviews h2 {
+    font-size: 4em !important;
+    font-family: "vollkorn", serif;
+  }
+  .reviews i {
+    color: #cbcdc4 !important;
+  }
   #review-container {
-    max-height: 100%; /* Ensures content does not exceed the parent's height */
-    overflow-y: auto; /* Allows scrolling within the container if needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
   .review {
-    display: none; /* Hide all reviews initially if you are cycling through them */
-    padding: 15px; /* Provides some spacing */
+    display: none; /* Hide all reviews initially, show them via JavaScript or another method */
   }
   
-  .review.show {
-    display: block; /* Class to show the active review */
+  /* Ensure the first review is visible as an example */
+  .review:first-of-type {
+    display: block;
+  }
+  .reviews .col-lg-9 {
+    /*! display: flex; *//*! margin: auto; */margin-right: auto;
+    margin-left: auto;
+  }
+
+  .review h2 {
+    font-size: 2em !important;
+    color: #f2f4ea !important;
+    font-family: "vollkorn", serif;
+  
+  }
+  .col-lg-9 > img:nth-child(2) {
+    width: 60vw !important;
+    margin: .0 0 1em 0;
   }
   
-  
+
+
+
 
 /** B&B **/
 .bedbreakfast {
@@ -532,7 +562,7 @@ i {
   }
 
   .carousel-caption h5 {
-    font-size: .7rem !important;
+    font-size: 0.9rem !important;
     margin-top: 2em;
   }
 
