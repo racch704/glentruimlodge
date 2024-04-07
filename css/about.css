@@ -34,6 +34,10 @@ h2 {
     text-decoration: none !important;
   }
 
+  .btn-bnb {
+    margin-top: 1em;
+  }
+
   .more-info {
     color: #335772 !important;
     text-decoration: underline !important;
