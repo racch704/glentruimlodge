@@ -246,8 +246,14 @@ h2 {
     background-color: rgba(64, 92, 113, 0.728); 
     color: white;
     text-align: left;
-    padding: 5em !important;
+    padding: 3em; /* Adjusted padding */
+    margin-top: 1em; /* Add space above */
+    margin-bottom: 1em; /* And below */
   }
+  
+
+  
+
 
   .content-area h3 {
     font-size: 2em !important;
@@ -541,7 +547,15 @@ i {
     width: 95vw !important;
     margin: .0 0 1em 0;
   }
+  /* Optional: Only if you opt for a different mobile strategy */
+
+  .background-image {
+    background-attachment: scroll; /* Adjust for mobile */
   
+}
+.background-image > div:nth-child(1) {
+  padding-top: 3em;
+  }
   
 }
 
