@@ -556,6 +556,9 @@ i {
 .background-image > div:nth-child(1) {
   padding-top: 3em;
   }
+  .get-text .p-5 {
+    padding: 2rem 1.6rem !important;
+  }
   
 }
 
