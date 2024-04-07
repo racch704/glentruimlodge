@@ -14,6 +14,41 @@
 }
 
 
+.crimson-text-regular {
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.crimson-text-semibold {
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.crimson-text-bold {
+  font-family: "Crimson Text", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.crimson-text-regular-italic {
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.crimson-text-semibold-italic {
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.crimson-text-bold-italic {
+  font-family: "Crimson Text", serif;
+  font-weight: 700;
+  font-style: italic;
+}
 
 
 
@@ -89,28 +124,8 @@ body {
   border-radius: 8px;
 }
 
-/* ADJUSTMENTS FOR SMALLER SCREENS */
 
-@media (max-width: 768px) {
-  .carousel-caption h1 {
-    font-size: 5rem !important;
-  }
 
-  .carousel-caption h2 {
-    font-size: 2rem !important;
-  }
-
-  .carousel-caption h5 {
-    font-size: 1.5rem !important;
-  }
-
-  .carousel-caption .btn, .carousel a .btn { /* Adjusted selector for consistency */
-    min-width: 175px !important; /* Ensures a minimum width for all buttons */
-    font-size: .9em;
-  }
-
-  
-}
 
 /* BUTTON STYLES */
 
@@ -140,14 +155,14 @@ body {
 
 .carousel-caption h1 {
   font-size: 7em;
-  font-family: 'Gabriola', serif !important;
+  font-family: 'Gabriola', serif ;
   font-weight: 550 !important;
   line-height: 0.7 !important;
 }
 
 .carousel-caption h2 {
   font-size: 3em;
-  font-family: 'Gabriola', serif !important;
+  font-family: 'Gabriola', serif;
   color: white !important;
   line-height: 0.7 !important;
   font-weight: 300 !important;
@@ -155,7 +170,7 @@ body {
 
 .carousel-caption h5 {
   font-size: 1em;
-  font-family: 'Hanken Grotesk' !important;
+  font-family: 'Hanken Grotesk';
   letter-spacing: 301;
 }
 
@@ -442,7 +457,7 @@ i {
 
 
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 
   img.img-fluid:nth-child(4) {
     padding-top: 1em;
@@ -468,8 +483,35 @@ i {
   a.btn:nth-child(6) {
     margin-bottom: 5em;
   }
+
   
   
 }
 
 
+/* ADJUSTMENTS FOR SMALLER SCREENS */
+
+@media (max-width: 768px) {
+  .carousel-caption h1 {
+    font-size: 4.5rem !important;
+    font-family: "Crimson Text", serif !important;
+    font-weight: 600;
+    font-style: italic;
+  }
+
+  .carousel-caption h2 {
+    font-size: 2rem !important;
+    font-family: "Crimson Text", serif !important;
+    font-weight: 600;
+    font-style: italic;
+  }
+
+  .carousel-caption h5 {
+    font-size: 1.5rem !important;
+  }
+
+  .carousel-caption .btn, .carousel a .btn { /* Adjusted selector for consistency */
+    min-width: 175px !important; /* Ensures a minimum width for all buttons */
+    font-size: .9em;
+  }
+}
