@@ -547,7 +547,7 @@ i {
     width: 90% !important; /* Make the caption background wider */
     padding: 10px 20px !important; /* Adjust padding to make it shorter */
     top: auto !important; /* Reset top position if needed */
-    bottom: 30%; /* Adjust bottom position to ensure it's not too low */
+    bottom: 30% !important; /* Adjust bottom position to ensure it's not too low */
     left: 50% !important; /* Center horizontally */
     transform: translateX(-50%) !important; /* Ensure centered alignment */
     background-color: rgba(0, 0, 0, 0.5) !important; /* Adjust background opacity as needed */
