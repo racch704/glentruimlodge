@@ -537,6 +537,10 @@ i {
     margin-bottom: 5em;
   }
 
+  .col-lg-9 > img:nth-child(2) {
+    width: 95vw !important;
+    margin: .0 0 1em 0;
+  }
   
   
 }
