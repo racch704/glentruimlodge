@@ -442,6 +442,34 @@ i {
 
 
 
+@media (max-width: 767px) {
 
+  img.img-fluid:nth-child(4) {
+    padding-top: 1em;
+  }
+  
+  .pods-text {
+    padding: 0 .6em !important;
+  }
+  
+  .eco-pods {
+    margin-top: 5em !important;
+  }
+  .bedbreakfast {
+    margin-top: 0em !important;
+  }
+  .pods-text p {
+    padding-top: 1em;
+  }
+  .button {
+    margin-top: 1em;
+    margin-bottom: 5em;
+  }
+  a.btn:nth-child(6) {
+    margin-bottom: 5em;
+  }
+  
+  
+}
 
 
