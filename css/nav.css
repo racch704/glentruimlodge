@@ -430,11 +430,12 @@ i {
   }
   
 
-  .text-left {
-    padding-left: 20%;
-    }
+
 
   .text-left p {
+    padding-top: 2em;
+  }
+  .text-left h2 {
     padding-top: 2em;
   }
 
@@ -532,6 +533,7 @@ i {
   .bedbreakfast {
     margin-top: 0em !important;
   }
+
   .pods-text p {
     padding-top: 1em;
   }
@@ -606,6 +608,8 @@ i {
   .carousel-caption .button {
     margin-bottom: 0em;
   }
-  
+  .bb-text {
+    padding-right: 0;
 
   }
+}

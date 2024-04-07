@@ -160,10 +160,38 @@ img {
       
 
 /** Amenities **/
+/* Directly targeting the accordion container */
+#accordionPanelsStayOpenExample {
+    background-color: #f2f4ea !important; /* Set your desired background color */
+  }
+  
+  /* Styling for accordion buttons when they are not in a collapsed state */
+  #accordionPanelsStayOpenExample .accordion-button:not(.collapsed) {
+    background-color: #335772 ; /* Green background for expanded items */
+    color: #f2f4ea !important; /* White text color for readability */
+  }
+  
+  /* Optional: Ensuring no border is shown on accordion items */
+  #accordionPanelsStayOpenExample .accordion-item {
+    border: none !important;
+  }
+  
+  /* Removing the box shadow (focus outline) when an accordion button is clicked */
+  #accordionPanelsStayOpenExample .accordion-button:focus {
+    box-shadow: none !important;
+  }
+
 #accordionPanelsStayOpenExample {
     display: grid;
     margin-right: auto;
     margin-left: auto;
+  }
+  .post-accordion {
+    font-family: 'vollkorn', serif;
+    color: #335772 !important;
+    font-weight: 300 !important;
+    font-size: 1.4em !important;
+    padding-top: 1em;
   }
   
   ul {
@@ -178,7 +206,7 @@ img {
     font-family: "vollkorn", serif;
     font-weight: 800;
     font-style: normal;
-    font-size: 4.5em;
+    font-size: 3em;
     color: #335772 !important;
   }
 
