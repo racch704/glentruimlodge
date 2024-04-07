@@ -442,17 +442,6 @@ i {
 
 
 
-@media (max-width: 767px) { /* Adjust for devices smaller than 768px wide */
-  .eco-pods .img-inside {
-    margin-top: 0.5em !important;
-  }
-
-  .pods-text {
-    padding: 0 .6em !important;
-  }
-}
-
-
 
 
 

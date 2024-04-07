@@ -1,6 +1,6 @@
 body {
     background-color: #f2f4ea !important;
-    overflow-y: hidden !important;
+
 }
 
 /** NAVIGATION **/
@@ -293,7 +293,7 @@ p {
     
   }
   
-  @media (min-width: 768px) { /* Large screens */
+  @media (min-width: 992px) { /* Large screens */
     .card {
     margin-right: 10em !important;
       margin-left: 10em !important;
