@@ -537,7 +537,7 @@ i {
   }
 
   .carousel-caption .btn, .carousel a .btn { /* Adjusted selector for consistency */
-    min-width: 160px !important; /* Ensures a minimum width for all buttons */
+    min-width: 130px !important; /* Ensures a minimum width for all buttons */
     font-size: .8em;
     margin-top: 0 !important;
     font-weight: 450 !important;
@@ -553,7 +553,7 @@ i {
     background-color: rgba(0, 0, 0, 0.5) !important; /* Adjust background opacity as needed */
   }
   .carousel-caption .button {
-    margin-bottom: 2em;
+    margin-bottom: 0em;
   }
   
 
