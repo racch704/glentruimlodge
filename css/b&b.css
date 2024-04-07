@@ -1,5 +1,6 @@
 body {
     background-color: #f2f4ea !important;
+    overflow-y: hidden !important;
 }
 
 /** NAVIGATION **/
@@ -172,6 +173,7 @@ img {
       margin-right: 1em;
   }
 
+
   .text h2 {
     font-family: "vollkorn", serif;
     font-weight: 800;
@@ -279,3 +281,25 @@ p {
   .overview-icons {
     padding-left: 0 !important;
     }
+
+/* Desktop styles - your existing styles should already handle this */
+
+
+@media (max-width: 767px) { /* Adjust for devices smaller than 768px wide */
+    .text {
+      padding: 0 1em !important;
+    }
+
+    
+  }
+  
+  @media (min-width: 768px) { /* Large screens */
+    .card {
+    margin-right: 10em !important;
+      margin-left: 10em !important;
+    }
+    .container > div:nth-child(1) {
+        margin-right: 10em;
+        margin-left: 10em;
+        }
+}

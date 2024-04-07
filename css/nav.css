@@ -20,6 +20,8 @@
 
 
 body {
+  overflow-x: hidden;
+  overflow-y: scroll !important;
     background-color: #f2f4ea !important;
     font-family: 'Hanken Grotesk', sans-serif; /* Use the font-family you defined above */
 }
@@ -106,6 +108,7 @@ body {
     min-width: 175px !important; /* Ensures a minimum width for all buttons */
     font-size: .9em;
   }
+
   
 }
 
@@ -187,6 +190,11 @@ h2 {
 
 .eco-pods {
     margin-top: 10em !important;
+}
+
+.eco-pods-responsive {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .eco-pods div.col-md-6:nth-child(2) {
@@ -416,4 +424,35 @@ i {
 
 
 /** MOBILE STYLING **/
+
+/* Hide desktop images on small screens and vice versa */
+.d-none {
+  display: none;
+}
+
+@media (min-width: 576px) { /* Adjust based on Bootstrap's breakpoints if needed */
+  .d-lg-none {
+      display: none;
+  }
+  .d-none.d-lg-block {
+      display: block;
+  }
+
+}
+
+
+
+@media (max-width: 767px) { /* Adjust for devices smaller than 768px wide */
+  .eco-pods .img-inside {
+    margin-top: 0.5em !important;
+  }
+
+  .pods-text {
+    padding: 0 .6em !important;
+  }
+}
+
+
+
+
 

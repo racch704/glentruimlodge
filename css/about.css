@@ -1,3 +1,8 @@
+body, html{
+  overflow-x: hidden;
+  overflow-y: scroll !important;
+} 
+
 .intro {
     display: flex;
     justify-content: center;
@@ -34,3 +39,15 @@ h2 {
     text-decoration: underline !important;
 
   }
+
+
+  /* Desktop styles - your existing styles should already handle this */
+
+
+  /* Ensure images are always visible */
+.image-container div {
+  min-height: 200px; /* Or any appropriate height */
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
