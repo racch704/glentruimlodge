@@ -119,7 +119,7 @@ body {
   bottom: 20% !important; /* Corrected to a single bottom property */
   right: 15%;
   left: 15%;
-  background-color: rgba(0, 0, 0, 0.242);
+  background-color: rgba(0, 0, 0, 0.382);
   padding: 20px;
   border-radius: 8px;
 }
@@ -143,7 +143,7 @@ body {
   color: white !important; 
   text-transform: uppercase;
   padding: 10px 20px !important;
-  font-weight: bold !important; 
+  font-weight: 600 !important; 
 }
 
 .carousel-caption .btn:hover, .carousel a .btn:hover { /* Adjusted selector for consistency */
@@ -156,7 +156,7 @@ body {
 .carousel-caption h1 {
   font-size: 7em;
   font-family: 'Gabriola', serif ;
-  font-weight: 550 !important;
+  font-weight: 550;
   line-height: 0.7 !important;
 }
 
@@ -181,7 +181,7 @@ h2 {
   font-family: "vollkorn", serif;
   font-weight: 800;
   font-style: normal;
-  font-size: 3em !important;
+  font-size: 3em;
   color: #335772 !important;
 }
 
@@ -228,9 +228,9 @@ h2 {
 
 .btn-custom {
     background-color: #829c64 !important; /* Example button color */
-    color: white;
-    border: none ;
-    padding: 10px 20px;
+    color: white !important;
+    border: none !important;
+    padding: .5em 3em !important;
     border-radius: 0 !important; /* Remove border radius for a sharp edge look */
   }
   
@@ -260,7 +260,30 @@ h2 {
     font-size: 4em !important;
   }
 
-
+  .reviews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden; /* Prevents the container from expanding */
+  }
+  
+  #review-container {
+    max-height: 100%; /* Ensures content does not exceed the parent's height */
+    overflow-y: auto; /* Allows scrolling within the container if needed */
+  }
+  
+  .review {
+    display: none; /* Hide all reviews initially if you are cycling through them */
+    padding: 15px; /* Provides some spacing */
+  }
+  
+  .review.show {
+    display: block; /* Class to show the active review */
+  }
+  
+  
 
 /** B&B **/
 .bedbreakfast {
@@ -493,25 +516,45 @@ i {
 
 @media (max-width: 768px) {
   .carousel-caption h1 {
-    font-size: 4.5rem !important;
+    font-size: 3.7rem !important;
     font-family: "Crimson Text", serif !important;
     font-weight: 600;
     font-style: italic;
+    padding-bottom: .1em;
   }
 
   .carousel-caption h2 {
-    font-size: 2rem !important;
+    font-size: 1.7rem !important;
     font-family: "Crimson Text", serif !important;
     font-weight: 600;
     font-style: italic;
+    padding-bottom: .5em;
   }
 
   .carousel-caption h5 {
-    font-size: 1.5rem !important;
+    font-size: .7rem !important;
+    margin-top: 2em;
   }
 
   .carousel-caption .btn, .carousel a .btn { /* Adjusted selector for consistency */
-    min-width: 175px !important; /* Ensures a minimum width for all buttons */
-    font-size: .9em;
+    min-width: 150px !important; /* Ensures a minimum width for all buttons */
+    font-size: .8em;
+    margin-top: 0 !important;
+    font-weight: 450 !important;
   }
-}
+  .carousel-caption {
+
+    width: 90% !important; /* Make the caption background wider */
+    padding: 10px 20px !important; /* Adjust padding to make it shorter */
+    top: auto !important; /* Reset top position if needed */
+    bottom: 30%; /* Adjust bottom position to ensure it's not too low */
+    left: 50% !important; /* Center horizontally */
+    transform: translateX(-50%) !important; /* Ensure centered alignment */
+    background-color: rgba(0, 0, 0, 0.5) !important; /* Adjust background opacity as needed */
+  }
+  .carousel-caption .button {
+    margin-bottom: 2em;
+  }
+  
+
+  }
