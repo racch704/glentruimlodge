@@ -268,55 +268,56 @@ h2 {
 
 
 
-  /** REVIEWS **/
-  .reviews {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 100vh;
-    overflow: hidden;
-    background-color: #405c71;
-    color: #f2f4ea !important;
-  }
-  .reviews h2 {
-    font-size: 4em !important;
-    font-family: "vollkorn", serif;
-  }
-  .reviews i {
-    color: #cbcdc4 !important;
-  }
-  #review-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .review {
-    display: none; /* Hide all reviews initially, show them via JavaScript or another method */
-  }
-  
-  /* Ensure the first review is visible as an example */
-  .review:first-of-type {
-    display: block;
-  }
-  .reviews .col-lg-9 {
-    /*! display: flex; *//*! margin: auto; */margin-right: auto;
-    margin-left: auto;
-  }
+/** REVIEWS **/
+.reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #405c71;
+  color: #f2f4ea !important;
+}
+.reviews h2 {
+  font-size: 4em !important;
+  font-family: "vollkorn", serif;
+}
+.reviews i {
+  color: #cbcdc4 !important;
+}
+#review-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-  .review h2 {
-    font-size: 2em !important;
-    color: #f2f4ea !important;
-    font-family: "vollkorn", serif;
-  
-  }
-  .col-lg-9 > img:nth-child(2) {
-    width: 60vw !important;
-    margin: .0 0 1em 0;
-  }
-  
+.review {
+  display: none; /* Hide all reviews initially, show them via JavaScript or another method */
+}
+
+/* Ensure the first review is visible as an example */
+.review:first-of-type {
+  display: block;
+}
+.reviews .col-lg-9 {
+  /*! display: flex; *//*! margin: auto; */margin-right: auto;
+  margin-left: auto;
+}
+
+.review h2 {
+  font-size: 2em !important;
+  color: #f2f4ea !important;
+  font-family: "vollkorn", serif;
+
+}
+.col-lg-9 > img:nth-child(2) {
+  width: 60vw !important;
+  margin: .0 0 1em 0;
+}
+
+
 
 
 
@@ -417,6 +418,13 @@ i {
   margin-left: auto;
   margin-right: auto;
 }
+
+
+.modal img {
+  max-width: 100%; /* Ensures image is not wider than its container */
+  height: auto; /* Keeps the image's aspect ratio */
+}
+
 
 
 /** FOOTER **/
@@ -562,12 +570,7 @@ i {
     padding: 2rem 1.6rem !important;
   }
   
-}
 
-
-/* ADJUSTMENTS FOR SMALLER SCREENS */
-
-@media (max-width: 768px) {
   .carousel-caption h1 {
     font-size: 3.7rem !important;
     font-family: "Crimson Text", serif !important;
