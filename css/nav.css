@@ -170,8 +170,8 @@ body {
 
 .carousel-caption h5 {
   font-size: 1em;
-  font-family: 'Hanken Grotesk';
-  letter-spacing: 301;
+  font-family: 'Hanken Grotesk', serif;
+  letter-spacing: 2px;
 }
 
 
@@ -444,7 +444,7 @@ i {
     padding-top: 2em;
   }
   .text-left h2 {
-    padding-top: 2sem;
+    padding-top: 2em;
   }
 
   .footer-map {
