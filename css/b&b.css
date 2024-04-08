@@ -213,7 +213,7 @@ img {
     font-family: "vollkorn", serif;
     font-weight: 800;
     font-style: normal;
-    font-size: 3em;
+    font-size: 2.5em !important;
     color: #335772 !important;
   }
 
@@ -230,7 +230,7 @@ img {
     font-family: "vollkorn", serif;
     font-weight: 200;
     font-style: normal;
-    font-size: .5em !important;
+    font-size: 1em !important;
     color: #335772 !important;
   
   }
@@ -256,7 +256,7 @@ img {
     display: grid;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 5em;
+
     }
 
     .content-center {
@@ -324,8 +324,13 @@ p {
 @media (max-width: 767px) { /* Adjust for devices smaller than 768px wide */
     .text {
       padding: 0 1em !important;
+      margin-bottom: 0 !important;
     }
+
+.amenities h2 button {
+    font-size: .8em !important;      
 
     
   }
   
+}
