@@ -89,14 +89,14 @@ body {
 
 
 
-.nav-link {
+.navbar li a {
   transition: text-shadow 0.3s ease; /* Smooth transition for a nicer effect */
   color: #40613e;
 }
 
 
-.nav-link:hover {
-  text-shadow: 0.5px 0 0 currentColor, -0.5px 0 0 currentColor; /* Mimics bold */
+.navbar li a:hover {
+  text-shadow: 0.5px 0 0 #40613e, -0.5px 0 0 #40613e; /* Mimics bold */
 }
 
 
@@ -230,7 +230,7 @@ h2 {
     background-color: #829c64 !important; /* Example button color */
     color: white !important;
     border: none !important;
-    padding: .5em 3em !important;
+    padding: .8em 3em !important;
     border-radius: 0 !important; /* Remove border radius for a sharp edge look */
   }
   

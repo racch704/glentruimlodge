@@ -135,33 +135,42 @@
           </div>
         
 
-  <!-- Modal -->
-  <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
-
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="bookingModalLabel">Booking or Inquiry</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <div>
-              <img src="img/b&b/front_sm_room.jpg" alt="">
-            </div>
-                <!-- OwnerRez Widget -->
-                <!-- OwnerRez Booking/Inquiry widget for Back Room -->
-                <div class="ownerrez-widget" data-widgetId="5ca77b42b6884e43bde5cd1ab9777f7d" data-propertyId="7ce7a593fb1344d3a353f6b26e97a4c8" data-widget-type="Booking/Inquiry"></div>
-            </div>
+<!-- Modal -->
+<div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document"> <!-- modal-lg for larger modal -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="bookingModalLabel">Booking or Inquiry</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body row"> <!-- Use 'row' to create a flex row container -->
+        <!-- Left column for the image -->
+        <div class="col-md-6">
+          <h2>Garden View Room</h2>
+          <img src="img/b&b/front_sm_room.jpg" class="img-fluid" alt="Room Image">
         </div>
+        <!-- Right column for the form/widget -->
+        <div class="col-md-6">
+          <!-- OwnerRez Widget or other modal content goes here -->
+          <!-- OwnerRez Booking/Inquiry widget for Front Room -->
+          <div class="ownerrez-widget" data-widgetId="5ca77b42b6884e43bde5cd1ab9777f7d" data-propertyId="f203487e561e4fc3b3fdf6898e08fb2c" data-widget-type="Booking/Inquiry"></div>
+
+            <!-- Your form content or inquiry details go here -->
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+</div>
+
 
 
   <div class="availability">
-  <!-- front room -->
-  <!-- OwnerRez Multiple Month Calendar widget for Upper Pod -->
-  <div class="ownerrez-widget col-lg-8 " data-propertyId="2b23d811fb3e449aaf6ebe2958a9d76f" data-widget-type="front room - Multiple Month Calendar" data-widgetId="b0abc08a538a434e99d4bc6ffed0a540">
-  <script src="https://secure.ownerrez.com/widget.js"></script>
+
+<!-- front room -->
+<!-- OwnerRez Multiple Month Calendar widget for Front Room -->
+<div class="ownerrez-widget col-lg-8 px-5" data-widgetId="b0abc08a538a434e99d4bc6ffed0a540" data-propertyId="f203487e561e4fc3b3fdf6898e08fb2c" data-widget-type="front room - Multiple Month Calendar"></div>
+<script type="text/javascript" src="https://secure.ownerrez.com/widget.js"></script>
       </div>
     </div>
 
@@ -170,7 +179,7 @@
 
       <div class="container mt-5">
         <!-- Your custom div with Bootstrap classes -->
-        <div class="row justify-content-center">
+        <div class="row justify-content-center mb-5">
             <div class="col-md-9">
                 <!-- OwnerRez Reviews widget -->
                 <div class="ownerrez-widget col-" data-widget-type="rooms - Reviews" data-widgetId="ba7a2e2f220d4da08b2b8adb76a5c113" data-reviews-per-page="4"></div>
