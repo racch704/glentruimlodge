@@ -155,7 +155,15 @@
   </div>
   </div>
       
-      
+      <!-- Cookie Consent Banner -->
+<div id="cookieConsent" style="display: none; position: fixed; bottom: 0; width: 100%; background-color: black; color: white; text-align: center; padding: 20px;">
+  <p>
+    We use cookies to improve your experience on our site. By continuing to use our site, you accept our use of cookies.
+    <a href="#" style="color: #ccc;">Learn More</a>. 
+    <button onclick="acceptCookies();" style="background-color: green; color: white; border: none; padding: 10px;">Accept</button>
+  </p>
+</div>
+
 
   <footer class="footer mt-auto bg-light center-content">
     <div class="container-fluid">
@@ -190,6 +198,9 @@
       </div>
     </div>
   </footer>
+
+
+  <script src="script.js"></script>
 
    
   <script>
@@ -232,6 +243,7 @@
   
     // Run the function on window resize, throttled to prevent excessive calls
     window.addEventListener('resize', throttle(moveImagesToTopOnMobile, 100));
+    
   </script>
   
   

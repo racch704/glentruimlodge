@@ -71,3 +71,42 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+function moveImagesToTopOnMobile() {
+    // Define the mobile width breakpoint (typically 768px for tablets and below)
+    const mobileWidthBreakpoint = 768;
+
+    // Only run the script if the window width is less than the breakpoint
+    if (window.innerWidth < mobileWidthBreakpoint) {
+      // Select all the 'col-lg-4 col-sm-12' divs which contain the background images
+      const imageDivs = document.querySelectorAll('.col-lg-4.col-sm-12.d-flex');
+
+      // Loop through all image divs
+      imageDivs.forEach((div) => {
+        // Get the parent row element
+        const parentRow = div.closest('.row');
+
+        // Move the image div to the start of the row
+        parentRow.prepend(div);
+      });
+    }
+  }
+
+  // Helper function to throttle events
+  function throttle(func, limit) {
+    let inThrottle;
+    return function() {
+      const args = arguments;
+      const context = this;
+      if (!inThrottle) {
+        func.apply(context, args);
+        inThrottle = true;
+        setTimeout(() => inThrottle = false, limit);
+      }
+    }
+  }
+
+  // Run the function on DOMContentLoaded
+  document.addEventListener('DOMContentLoaded', moveImagesToTopOnMobile);
+
+  // Run the function on window resize, throttled to prevent excessive calls
+  window.addEventListener('resize', throttle(moveImagesToTopOnMobile, 100));
