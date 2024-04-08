@@ -91,7 +91,7 @@ body {
 
 .nav-link {
   transition: text-shadow 0.3s ease; /* Smooth transition for a nicer effect */
-  color: #40613e !important;
+  color: #40613e;
 }
 
 
@@ -436,7 +436,7 @@ i {
     padding-top: 2em;
   }
   .text-left h2 {
-    padding-top: 2em;
+    padding-top: 2sem;
   }
 
   .footer-map {

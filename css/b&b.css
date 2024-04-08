@@ -16,9 +16,15 @@ nav ul {
     text-align: center;
 
  }
+
+
+  
  
- nav ul li {
+ .second-nav ul li {
     display: inline-block;
+min-width: 250px;
+font-family: 'vollkorn', serif;
+font-size: 1.2em;
  }
 
  .custom-mr-auto {
@@ -48,27 +54,28 @@ nav ul {
 
 .active {
     background-color: #6e8256 !important;
-    padding: .5em 1em !important;
+    padding: .4em .8em !important;
     color: #fffff3 !important;
+    font-family: "vollkorn", serif !important;
 }
 .active:hover {
     background-color: #829c64 !important;
-    padding: .5em 1em !important;
+    padding: .4em .8em !important;
+    text-shadow: none !important;
 }
 .non-active{
     background-color: transparent !important;
-    padding: .5em 1em !important;
+    padding: .4em .8em !important;
 }
 .non-active:hover{
     background-color: #829c64 !important;
-    padding: .5em 1em !important;
+    padding: .4em .8em !important;
     color: #fffff3 !important;
+    text-shadow: none !important;
 }
 
 
-.second-nav li {
-    padding: 0 .7em;
-}
+
 
 
 .second-nav {
@@ -249,6 +256,7 @@ img {
     display: grid;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 5em;
     }
 
     .content-center {
@@ -321,13 +329,3 @@ p {
     
   }
   
-  @media (min-width: 992px) { /* Large screens */
-    .card {
-    margin-right: 10em !important;
-      margin-left: 10em !important;
-    }
-    .container > div:nth-child(1) {
-        margin-right: 10em;
-        margin-left: 10em;
-        }
-}
